@@ -1,0 +1,196 @@
+
+
+body {
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+img {
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+#b1{
+    left:30%;
+    animation-name: bird1;
+    animation-duration: 10s;
+
+}
+
+#b2{
+    right:4%;
+    animation-name: bird2;
+    animation-duration: 10s;
+}
+
+#b3{
+    left:2%;
+    animation-name: bird3;
+    animation-duration: 10s;
+
+    
+}
+#b4{
+    left:10%;
+    animation-name: bird4;
+    animation-duration: 10s;
+    
+}
+
+#b5{
+    left:67%;
+    animation-name: bird5;
+    animation-duration: 10s;
+    
+}
+
+#b6{
+    left:44%;
+    animation-name: bird6;
+    animation-duration: 10s;
+    
+}
+
+#b7{
+    right:30%;
+    animation-name: bird7;
+    animation-duration: 10s;
+}
+
+#b8{
+    left:50%;
+    animation-name: bird8;
+    animation-duration: 10s;
+}
+
+#b9{
+    right:70%;
+    animation-name: bird9;
+    animation-duration: 10s;
+    
+}
+
+#b10{
+    left:42%;
+    animation-name: bird10;
+    animation-duration: 10s;
+}
+
+#b11{
+    right:0%;
+    animation-name: turky;
+    animation-duration: 6s;
+    animation-iteration-count: 4;
+}
+
+@keyframes bird1 {
+    10% {left: 90%; bottom: 20%;}
+    30% {left: 60%; bottom: 40%;}
+    50% {left: 40%; bottom: 70%;}
+    70% {left: 20%; bottom: 80%;}
+    80% {left: 10%; bottom: 90%;}
+    89% {left: 20%; bottom: 70%;}
+    100% {left: 25%; bottom: 40%;}
+}
+
+@keyframes bird2 {
+    10% {left: 50%; bottom: 40%;}
+    40% {left: 60%; bottom: 70%;}
+    50% {left: 32%; bottom: 30%;}
+    70% {left: 25%; bottom: 26%;}
+    79% {left: 30%; bottom: 30%;}
+    89% {left: 20%; bottom: 20%;}
+    100% {left: 12%; bottom: 30%;}
+}
+
+@keyframes bird3 {
+    23% {left: 51%; bottom: 80%;}
+    43% {left: 602%; bottom: 70%;}
+    63% {left: 33%; bottom: 40%;}
+    83% {left: 24%; bottom: 40%;}
+    73% {left: 15%; bottom: 30%;}
+    93% {left: 7%; bottom: 10%;}
+    100% {left: 0%; bottom: 90%;}
+}
+
+@keyframes bird4 {
+    10% {left: 70%; bottom: 30%;}
+    30% {left: 50%; bottom: 40%;}
+    40% {left: 30%; bottom: 50%;}
+    80% {left: 40%; bottom: 70%;}
+    70% {left: 60%; bottom: 30%;}
+    90% {left: 7%; bottom: 50%;}
+    100% {left: 95%; bottom: 33%;}
+}
+
+@keyframes bird5 {
+    33% {left: 20%; bottom: 31%;}
+    39% {left: 30%; bottom: 47%;}
+    59% {left: 44%; bottom: 53%;}
+    66% {left: 52%; bottom: 76%;}
+    78% {left: 71%; bottom: 34%;}
+    84% {left: 78%; bottom: 56%;}
+    90% {left: 80%; bottom: 22%;}
+}
+
+@keyframes bird6 {
+    15% {left: 7%; bottom: 30%;}
+    36% {left: 10%; bottom: 40%;}
+    49% {left: 20%; bottom: 50%;}
+    66% {left: 50%; bottom: 70%;}
+    79% {left: 22%; bottom: 30%;}
+    82% {left: 33%; bottom: 50%;}
+    90% {left: 70%; bottom: 60%;}
+}
+
+@keyframes bird7 {
+    5% {left: 5%; bottom: 15%;}
+    9% {left: 15%; bottom: 30%;}
+    50% {left: 20%; bottom: 40%;}
+    10% {left: 40%; bottom: 50%;}
+    19% {left: 71%; bottom: 40%;}
+    22% {left: 80%; bottom: 60%;}
+    39% {left: 100%; bottom: 30%;}
+}
+
+@keyframes bird8 {
+    13% {left: 10%; bottom: 30%;}
+    36% {left: 30%; bottom: 40%;}
+    50% {left: 40%; bottom: 50%;}
+    60% {left: 50%; bottom: 70%;}
+    79% {left: 70%; bottom: 30%;}
+    82% {left: 40%; bottom: 50%;}
+    90% {left: 90%; bottom: 47%;}
+}
+
+@keyframes bird9 {
+    17% {left: 10%; bottom: 30%;}
+    34% {left: 30%; bottom: 40%;}
+    53% {left: 40%; bottom: 50%;}
+    67% {left: 50%; bottom: 70%;}
+    77% {left: 70%; bottom: 50%;}
+    80% {left: 80%; bottom: 70%;}
+    98% {left: 33%; bottom: 85%;}
+}
+
+@keyframes bird10 {
+    25% {left: 9%; bottom: 22%;}
+    35% {left: 16%; bottom: 32%;}
+    45% {left: 32%; bottom: 42%;}
+    69% {left: 42%; bottom: 64%;}
+    79% {left: 52%; bottom: 52%;}
+    89% {left: 72%; bottom: 42%;}
+    94% {left: 80%; bottom: 32%;}
+}
+
+@keyframes turky {
+    100% {right:100%; bottom: 40%;}
+    
+}
