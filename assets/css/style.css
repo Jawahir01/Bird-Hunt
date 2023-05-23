@@ -7,20 +7,31 @@ body {
     background-attachment: fixed;
     background-size: cover;
     overflow: hidden;
+    
+}
+html{
+    cursor: crosshair;
 }
 
 img {
     width: 100px;
     position: absolute;
     bottom: 0;
+    animation-fill-mode: forwards;
 }
 
+#scores, #bullets {
+    position: absolute;
+    font-size: 30px;
+    color: chocolate;
+}
 
 
 #b1{
     left:30%;
     animation-name: bird1;
     animation-duration: 10s;
+    
 
 }
 
@@ -28,12 +39,14 @@ img {
     right:4%;
     animation-name: bird2;
     animation-duration: 10s;
+    
 }
 
 #b3{
     left:2%;
     animation-name: bird3;
     animation-duration: 10s;
+    
 
     
 }
@@ -42,12 +55,14 @@ img {
     animation-name: bird4;
     animation-duration: 10s;
     
+    
 }
 
 #b5{
     left:67%;
     animation-name: bird5;
     animation-duration: 10s;
+    
     
 }
 
@@ -62,12 +77,14 @@ img {
     right:30%;
     animation-name: bird7;
     animation-duration: 10s;
+    
 }
 
 #b8{
     left:50%;
     animation-name: bird8;
     animation-duration: 10s;
+    
 }
 
 #b9{
@@ -75,19 +92,21 @@ img {
     animation-name: bird9;
     animation-duration: 10s;
     
+    
 }
 
 #b10{
     left:42%;
     animation-name: bird10;
     animation-duration: 10s;
+    
 }
 
 #b11{
     right:0%;
     animation-name: turky;
-    animation-duration: 6s;
-    animation-iteration-count: 4;
+    animation-duration: 10s;
+    
 }
 
 @keyframes bird1 {
@@ -107,14 +126,14 @@ img {
     70% {left: 25%; bottom: 26%;}
     79% {left: 30%; bottom: 30%;}
     89% {left: 20%; bottom: 20%;}
-    100% {left: 12%; bottom: 30%;}
+    100% {left: 12%; bottom: 35%;}
 }
 
 @keyframes bird3 {
     23% {left: 51%; bottom: 80%;}
     43% {left: 602%; bottom: 70%;}
     63% {left: 33%; bottom: 40%;}
-    83% {left: 24%; bottom: 40%;}
+    83% {left: 24%; bottom: 80%;}
     73% {left: 15%; bottom: 30%;}
     93% {left: 7%; bottom: 10%;}
     100% {left: 0%; bottom: 90%;}
@@ -151,7 +170,7 @@ img {
 }
 
 @keyframes bird7 {
-    5% {left: 5%; bottom: 15%;}
+    5% {left: 35%; bottom: 15%;}
     9% {left: 15%; bottom: 30%;}
     50% {left: 20%; bottom: 40%;}
     10% {left: 40%; bottom: 50%;}
@@ -171,7 +190,7 @@ img {
 }
 
 @keyframes bird9 {
-    17% {left: 10%; bottom: 30%;}
+    17% {left: 25%; bottom: 30%;}
     34% {left: 30%; bottom: 40%;}
     53% {left: 40%; bottom: 50%;}
     67% {left: 50%; bottom: 70%;}
@@ -191,6 +210,7 @@ img {
 }
 
 @keyframes turky {
-    100% {right:100%; bottom: 40%;}
+    80% {right:100%; bottom: 20%;}
+    
     
 }
