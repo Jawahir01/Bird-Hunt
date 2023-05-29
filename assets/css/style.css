@@ -143,28 +143,27 @@ img {
 
 
 #b1{
-    left:30%;
-    animation-name: bird1;
-    animation-duration:20s
+    right:100%;
+    animation: bird1 8s infinite;
+    /*animation-direction: alternate-reverse;*/
+    animation-timing-function: linear;
 }
 
 #b2{
-    right:4%;
-    animation-name: bird2;
-    animation-duration: 10s;
+    right:100%;
+    animation: bird2 10s infinite;
+    animation-timing-function: linear;
 }
 
 #b3{
-    left:2%;
-    animation-name: bird3;
-    animation-duration: 10s;
+    left:100%;
+    animation: bird3 10s infinite;
+    animation-timing-function: linear;
 }
 #b4{
-    left:10%;
-    animation-name: bird4;
-    animation-duration: 20s;
-    
-    
+    left:100%;
+    animation: bird4 10s infinite;
+    animation-timing-function: linear;
 }
 
 #b5{
@@ -176,24 +175,22 @@ img {
 }
 
 #b6{
-    left:44%;
-    animation-name: bird6;
-    animation-duration: 10s;
-    
+    right:100%;
+    animation: bird6 10s infinite;
+    animation-timing-function: linear;
 }
 
 #b7{
-    right:30%;
-    animation-name: bird7;
-    animation-duration: 20s;
+    left:100%;
+    animation: bird7 11s infinite;
+    animation-timing-function: linear;
     
 }
 
 #b8{
-    left:50%;
-    animation-name: bird8;
-    animation-duration: 10s;
-    
+    right:100%;
+    animation: bird8 9s infinite;
+    animation-timing-function: linear;
 }
 
 #b9{
@@ -218,46 +215,60 @@ img {
     
 }
 
-
-
 @keyframes bird1 {
-    10% {left: 90%; bottom: 20%;}
-    30% {left: 60%; bottom: 40%;}
-    50% {left: 40%; bottom: 70%;}
-    70% {left: 20%; bottom: 80%;}
-    80% {left: 10%; bottom: 90%;}
-    89% {left: 20%; bottom: 70%;}
-    100% {left: 25%; bottom: 40%;}
+    0% {right: 0px; top:30px;}
+    5% {top:-15px;}
+    10% {top:20px;}
+    20% {top:-20px;}
+    40% {top:15px;}
+    50% {top:-25px;}
+    60% {top:25px;}
+    80% {top:-30px;}
+    90% {top:20px;}
+    100% {right: 100%; top:30px;}
+    
 }
 
 @keyframes bird2 {
-    10% {left: 50%; bottom: 40%;}
-    40% {left: 60%; bottom: 70%;}
-    50% {left: 32%; bottom: 30%;}
-    70% {left: 25%; bottom: 26%;}
-    79% {left: 30%; bottom: 30%;}
-    89% {left: 20%; bottom: 20%;}
-    100% {left: 12%; bottom: 35%;}
+    0% {right: 0px; top:90px;}
+    5% {top:-15px;}
+    10% {top:50px;}
+    15% {top:-20px}
+    20% {top:70px;}
+    40% {top:-10px;}
+    50% {top:100px;}
+    60% {top:-10px;}
+    80% {top:170px;}
+    90% {top:-20px;}
+    100% {right: 100%; top:220px;}
 }
 
 @keyframes bird3 {
-    23% {left: 51%; bottom: 80%;}
-    43% {left: 602%; bottom: 70%;}
-    63% {left: 33%; bottom: 40%;}
-    83% {left: 24%; bottom: 80%;}
-    73% {left: 15%; bottom: 30%;}
-    93% {left: 7%; bottom: 10%;}
-    100% {left: 0%; bottom: 90%;}
+    0% {left: 0px; top:90px;}
+    5% {top:-15px;}
+    10% {top:50px;}
+    15% {top:-20px}
+    20% {top:70px;}
+    30% {top:-10px;}
+    50% {top:100px;}
+    60% {top:-10px;}
+    80% {top:170px;}
+    90% {top:-20px;}
+    100% {left: 100%; top:220px;}
 }
 
 @keyframes bird4 {
-    10% {left: 70%; bottom: 30%;}
-    30% {left: 50%; bottom: 40%;}
-    40% {left: 30%; bottom: 50%;}
-    80% {left: 40%; bottom: 70%;}
-    70% {left: 60%; bottom: 30%;}
-    90% {left: 7%; bottom: 50%;}
-    100% {left: 95%; bottom: 33%;}
+    0% {left: 0px; bottom:100px;}
+    5% {bottom:-15px;}
+    10% {bottom:90px;}
+    15% {bottom:-20px}
+    20% {bottom:120px;}
+    30% {bottom:-10px;}
+    50% {bottom:100px;}
+    60% {bottom:-10px;}
+    80% {bottom:170px;}
+    90% {bottom:-20px;}
+    100% {left: 100%; bottom:220px;}
 }
 
 @keyframes bird5 {
@@ -271,33 +282,44 @@ img {
 }
 
 @keyframes bird6 {
-    15% {left: 7%; bottom: 30%;}
-    36% {left: 10%; bottom: 40%;}
-    49% {left: 20%; bottom: 50%;}
-    66% {left: 50%; bottom: 70%;}
-    79% {left: 22%; bottom: 30%;}
-    82% {left: 33%; bottom: 50%;}
-    90% {left: 70%; bottom: 60%;}
+    0% {right: 0px; top:300px;}
+    5% {top:250px;}
+    10% {top:300px;}
+    15% {top:350px}
+    20% {top:400px;}
+    40% {top:450px;}
+    50% {top:300px;}
+    60% {top:370px;}
+    80% {top:330px;}
+    90% {top:400px;}
+    100% {right: 100%; top:350px;}
 }
 
 @keyframes bird7 {
-    5% {left: 35%; bottom: 15%;}
-    9% {left: 15%; bottom: 30%;}
-    50% {left: 20%; bottom: 40%;}
-    10% {left: 40%; bottom: 50%;}
-    19% {left: 71%; bottom: 40%;}
-    22% {left: 80%; bottom: 60%;}
-    39% {left: 100%; bottom: 30%;}
+    0% {left: 0px; bottom:100px;}
+    5% {bottom:-15px;}
+    10% {bottom:90px;}
+    15% {bottom:-20px}
+    20% {bottom:120px;}
+    30% {bottom:-10px;}
+    50% {bottom:100px;}
+    60% {bottom:-10px;}
+    80% {bottom:170px;}
+    90% {bottom:-20px;}
+    100% {left: 100%; bottom:220px;}
 }
 
 @keyframes bird8 {
-    13% {left: 10%; bottom: 30%;}
-    36% {left: 30%; bottom: 40%;}
-    50% {left: 40%; bottom: 50%;}
-    60% {left: 50%; bottom: 70%;}
-    79% {left: 70%; bottom: 30%;}
-    82% {left: 40%; bottom: 50%;}
-    90% {left: 90%; bottom: 47%;}
+    0% {right: 0px; bottom:50px;}
+    5% {bottom:-10px;}
+    10% {bottom:30px;}
+    20% {bottom:-15px;}
+    40% {bottom:25px;}
+    50% {bottom:-20px;}
+    60% {bottom:25px;}
+    80% {bottom:-10px;}
+    90% {bottom:20px;}
+    100% {right: 100%; bottom:30px;}
 }
 
 @keyframes bird9 {
