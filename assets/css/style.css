@@ -3,18 +3,43 @@
 /*font-family: 'Pangolin', cursive;
 font-family: 'Roboto', sans-serif;*/
 
+.mobiles {
+    display: none;
+    width: 328px;
+    height: 140px;
+    left: 16px;
+    top: 30px;
+    color: #fff;
+    background-color: #696969a6;
+    position: relative;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Roboto', serif;
+    margin: 5px 4px;
+    padding: 3px;
+}
+
+@media only screen and (orientation: portrait){
+    div.mobiles{
+        display: block;
+    }
+
+    div.container-fluid {
+        display: none;
+    }
+}
+
 body {
-    background-image: url(../images/background.png);
+    background-image: url(../images/birdhuntTheme.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 100% 100%;
     overflow: hidden;
-
 }
 
-.start_body {
-    background-image: url(../images/birdhuntTheme.jpg);
+.game-bg-image {
+    background-image: url(../images/background.png);
     background-repeat: no-repeat;
     background-position: bottom;
     background-attachment: fixed;
@@ -26,7 +51,6 @@ html{
     cursor: crosshair;
 }
 
-
 .gameChoise {
     --bs-gutter-x: -15.5rem;
     --bs-gutter-y: 1.3rem;
@@ -34,14 +58,13 @@ html{
 .homeTilte {
     font-family: 'Pangolin', cursive;
     text-align: center;
-    font-size: 90px;
+    font-size: 9vw;
     font-weight: 800;
     color: #de7a29;
     margin: 30px;
     padding-top: 1rem;
     padding-bottom: 2rem;
     letter-spacing: 3px;
-    text-shadow: yellow;
 }
 
 .resultBox {
@@ -88,15 +111,15 @@ html{
 }
 
 
-
 .btn-primary-play{
     --bs-btn-padding-x: 1.20rem;
-    --bs-btn-padding-y: 0.5rem;
+    --bs-btn-padding-y: 0.6rem;
     font-size: 2rem;
     color: #fff;
     font-family: 'Pangolin', cursive;
     background-color: #0d3afdb3;
     cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .btn-primary-instrct{
@@ -112,8 +135,8 @@ html{
 }
 
 .btn-primary-play:hover , .btn-primary-instrct:hover {
-    background-color: #ffa500;
-    color: white;
+    background-color: #0d39fdfe;
+    color: black;
 }
 
 img {
@@ -137,8 +160,10 @@ img {
 
 #scores, #bullets {
     position: absolute;
-    font-size: 30px;
-    color: chocolate;
+    font-size: 25px;
+    color: #d3600e;
+    left: 3px;
+    font-weight: 400;
 }
 
 
@@ -162,16 +187,14 @@ img {
 }
 #b4{
     left:100%;
-    animation: bird4 10s infinite;
+    animation: bird4 9s infinite;
     animation-timing-function: linear;
 }
 
 #b5{
-    left:67%;
-    animation-name: bird5;
-    animation-duration: 10s;
-    
-    
+    left:100%;
+    animation: bird5 9s infinite;
+    animation-timing-function: linear;
 }
 
 #b6{
@@ -194,25 +217,22 @@ img {
 }
 
 #b9{
-    right:70%;
-    animation-name: bird9;
-    animation-duration: 10s;
-    
-    
+    left:100%;
+    animation: dragon 11s infinite;
+    animation-timing-function: linear;
 }
 
 #b10{
-    left:42%;
-    animation-name: bird10;
-    animation-duration: 10s;
-    
+    left:100%;
+    animation: bird10 12s infinite;
+    animation-timing-function: linear;
 }
 
 #b11{
-    right:0%;
-    animation-name: turky;
-    animation-duration: 10s;
-    
+    right:100%;
+    animation: turky 6s 2;
+    animation-timing-function: linear;
+    animation-delay: 5s;
 }
 
 @keyframes bird1 {
@@ -272,14 +292,13 @@ img {
 }
 
 @keyframes bird5 {
-    33% {left: 20%; bottom: 31%;}
-    39% {left: 30%; bottom: 47%;}
-    59% {left: 44%; bottom: 53%;}
-    66% {left: 52%; bottom: 76%;}
-    78% {left: 71%; bottom: 34%;}
-    84% {left: 78%; bottom: 56%;}
-    90% {left: 80%; bottom: 22%;}
+    0% {left: 0px; bottom:150px;}
+    25% {bottom:200px;}
+    50% {bottom:120px;}
+    75% {bottom:200px;}
+    100% {left: 100%; bottom:250px;}
 }
+
 
 @keyframes bird6 {
     0% {right: 0px; top:300px;}
@@ -296,17 +315,17 @@ img {
 }
 
 @keyframes bird7 {
-    0% {left: 0px; bottom:100px;}
-    5% {bottom:-15px;}
-    10% {bottom:90px;}
-    15% {bottom:-20px}
-    20% {bottom:120px;}
-    30% {bottom:-10px;}
-    50% {bottom:100px;}
-    60% {bottom:-10px;}
-    80% {bottom:170px;}
-    90% {bottom:-20px;}
-    100% {left: 100%; bottom:220px;}
+    0% {left: 0px; bottom:400px;}
+    5% {bottom:330px;}
+    10% {bottom:380px;}
+    15% {bottom:450px}
+    20% {bottom:320px;}
+    30% {bottom:415px;}
+    50% {bottom:350px;}
+    60% {bottom:400px;}
+    80% {bottom:370px;}
+    90% {bottom:480px;}
+    100% {left: 100%; bottom:420px;}
 }
 
 @keyframes bird8 {
@@ -322,28 +341,24 @@ img {
     100% {right: 100%; bottom:30px;}
 }
 
-@keyframes bird9 {
-    17% {left: 25%; bottom: 30%;}
-    34% {left: 30%; bottom: 40%;}
-    53% {left: 40%; bottom: 50%;}
-    67% {left: 50%; bottom: 70%;}
-    77% {left: 70%; bottom: 50%;}
-    80% {left: 80%; bottom: 70%;}
-    98% {left: 33%; bottom: 85%;}
+@keyframes dragon {
+    0% {left: 0px; top:150px;}
+    25% {top:200px;}
+    50% {top:170px;}
+    75% {top:100px;}
+    100% {left: 100%; top:300px;}
 }
 
 @keyframes bird10 {
-    25% {left: 9%; bottom: 22%;}
-    35% {left: 16%; bottom: 32%;}
-    45% {left: 32%; bottom: 42%;}
-    69% {left: 42%; bottom: 64%;}
-    79% {left: 52%; bottom: 52%;}
-    89% {left: 72%; bottom: 42%;}
-    94% {left: 80%; bottom: 32%;}
+    0% {left: 0px; bottom:150px;}
+    25% {bottom:200px;}
+    50% {bottom:120px;}
+    75% {bottom:200px;}
+    100% {left: 100%; bottom:350px;}
 }
 
 @keyframes turky {
-    80% {right:100%; bottom: 20%;}
+    0% {right: 0px; bottom: 35px;}
     
     
 }
