@@ -29,7 +29,8 @@ function shootBullet(event) {
     }
 }
 
-window.addEventListener('DomContentLoadedEvent', initializeGame);
+
+window.addEventListener('DOMContentLoaded', initializeGame);
 
 
 // If user successfuly shot the bird, the bird will disapear and it will be counted.
@@ -73,3 +74,8 @@ window.onclick = function (event){
 }
 
 // If the player ran out of bullets the game ends and his score is counted*/
+// function mytest(){
+//     console.log("hello from inside mytest function");
+// }
+
+// window.addEventListener('DOMContentLoaded', mytest);
