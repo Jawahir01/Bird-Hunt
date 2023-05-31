@@ -5,18 +5,17 @@ font-family: 'Roboto', sans-serif;*/
 
 .mobiles {
     display: none;
-    width: 328px;
+    width: 300px;
     height: 140px;
-    left: 16px;
-    top: 30px;
+    top: 16vw;
     color: #fff;
     background-color: #696969a6;
     position: relative;
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 3vw;
     font-family: 'Roboto', serif;
-    margin: 5px 4px;
-    padding: 3px;
+    margin: 2vw;
+    padding: 1.5vw;
 }
 
 @media only screen and (orientation: portrait){
@@ -67,6 +66,20 @@ html{
     letter-spacing: 3px;
 }
 
+#countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d3600e;
+    font-size: 4vw;
+    font-weight: 200;
+    width: 80px;
+    height: 80px;
+    background-color: #fcf3d9;
+    border-radius: 50%;
+    position: absolute;
+  }
+
 .resultBox {
     --bs-gutter-x: 1rem;
     position: relative;
@@ -85,10 +98,21 @@ html{
     top: 5rem;
 }
 
+#timeOut{
+    max-height: 250px;
+    width: 20rem;
+    border-radius: 10px;
+    background-color: #eac980ce;
+    position: relative;
+    left: 24%;
+    margin: 1rem;
+    top: 5rem;
+}
+
 .endtitle{
     font-family: 'Pangolin', cursive;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 800;
     color: #de7a29;
     padding: 0.2rem
@@ -97,10 +121,10 @@ html{
 .endresult {
     font-family: 'Pangolin', cursive;
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 800;
     color: black;
-    margin: 1rem;
+    margin: 0.5rem;
 }
 
 .container-fluid {
@@ -114,7 +138,7 @@ html{
 .btn-primary-play{
     --bs-btn-padding-x: 1.20rem;
     --bs-btn-padding-y: 0.6rem;
-    font-size: 2rem;
+    font-size: 2.4vw;
     color: #fff;
     font-family: 'Pangolin', cursive;
     background-color: #0d3afdb3;
@@ -125,7 +149,7 @@ html{
 .btn-primary-instrct{
     --bs-btn-padding-x: 1.20rem;
     --bs-btn-padding-y: 0.6rem;
-    font-size: 2rem;
+    font-size: 2.3vw;
     color: #fff;
     font-family: 'Pangolin', cursive;
     background-color: #0d3afdb3;
@@ -164,6 +188,31 @@ img {
     color: #d3600e;
     left: 3px;
     font-weight: 400;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1px;
+    background-color: #d3d3d35c;
+    
+}
+
+.footer > p, a,
+i {
+    color: #f04c0ba2;
+    padding: 0.3vw;
+    margin: 0px;
+    font-size: 2vw;
+    text-align: left;
+    text-decoration: none;
+}
+
+.footer > p, a,
+i:hover {
+    color: #ef5316ef;
 }
 
 

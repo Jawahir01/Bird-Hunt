@@ -1,71 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" rel="stylesheet" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Bird Hunt</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Bird Hunt</title>
 </head>
+
 <body>
-      <!-- Mobile Notification -->
-  <div class="mobiles"><p class="h3">I'm sorry,, the resolution for this game is too small.
-    <i class="fa fa-sad-tear" aria-hidden="true"></i></p>
-    <p class="h5">Please rotate your device to enjoy the game! or use a wider screen.</p>
+  <!-- Mobile Notification -->
+  <div class="mobiles col-lg">
+    <p class="h3">I'm sorry,, the resolution for this game is too small.
+      <i class="fa fa-sad-tear" aria-hidden="true"></i>
+    </p>
+    <p class="h6">Please rotate your device to enjoy the game! or use a wider screen.</p>
   </div>
-        <!-- Home Page -->
-<div class="container-fluid mt-3">
-  <h1 class="homeTilte display-1">Bird Hunt</h1>
+  <!-- Home Page -->
+  <div class="container-fluid mt-">
+    <h1 class="homeTilte display-1">Bird Hunt</h1>
 
-  <div class="row row-cols-1 gameChoise">
-    <div class="col">
-        <a href="start.html" class="btn btn-primary-play btn-lg">Start Game</a>
-    </div><br><br>
-    <div class="col">
-        <button type="button" class="btn btn-primary-instrct btn-lg" data-bs-toggle="modal"
-            data-bs-target="#myModal">Instructions
+    <div class="row row-cols-md-1 ">
+      <div class="col col-sm">
+        <a href="start.html" class="btn btn-primary-play btn-sm">Play Game</a>
+      </div><br><br>
+      <div class="col col-sm">
+        <button type="button" class="btn btn-primary-instrct btn-sm" data-bs-toggle="modal"
+          data-bs-target="#myModal">Instructions
         </button>
-    </div>
-</div>
-
-        <!-- The Insructions Modal -->
-<div class="modal fade" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-
-        <!-- Modal Header -->
-      <div class="modal-header">
-        <h2 class="modal-title">BIRD HUNT</h2>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
+    </div>
 
-        <!-- Modal body -->
-      <div class="modal-body">
-        <h3>Game Rules..</h3>
-        <ul>
+    <!-- The Insructions Modal -->
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h2 class="modal-title">BIRD HUNT</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <h3>Game Rules..</h3>
+            <ul>
               <li>Aim your curser at the target birds and press.</li>
               <li>Show your shooting skill and make higher scores.</li>
               <li>Shoot as fast as you can before the time ends.</li>
               <li>Game ends once you ran out of bullets.</li>
               <li>You will loose scores if you shoot other animals.</li>
-          </ul>
-      </div>
+            </ul>
+          </div>
 
-        <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-      </div>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
 
+        </div>
+      </div>
     </div>
   </div>
-</div>
 
-  </body>
+    <footer class="footer ">
+      <p>Developed By<a href="https://github.com/Jawahir01" target="_blank" aria-label="Link to github">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+        <a href="http://www.linkedin.com" target="_blank" aria-label="Link to linkedin">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+      </p>
+
+    </footer>
+
+</body>
+
 </html>
