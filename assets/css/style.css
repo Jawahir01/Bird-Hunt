@@ -57,12 +57,11 @@ html{
 .homeTilte {
     font-family: 'Pangolin', cursive;
     text-align: center;
-    font-size: 9vw;
+    font-size: 8vw;
     font-weight: 800;
     color: #de7a29;
-    margin: 30px;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+    margin: 2px;
+    padding-top: 2rem;
     letter-spacing: 3px;
 }
 
@@ -71,7 +70,8 @@ html{
     justify-content: center;
     align-items: center;
     color: #d3600e;
-    font-size: 4vw;
+    font-family:"Pangolin",sans-serif ;
+    font-size: 2.3vw;
     font-weight: 200;
     width: 80px;
     height: 80px;
@@ -128,22 +128,21 @@ html{
 }
 
 .container-fluid {
-    width: 80%;
-    /*background-color: #bae6cb62;*/
-    height: 500px;
+    width: 70%;
+    height: 350px;
     border-radius: 10px;
+    margin-top: 2rem;
 }
 
 
 .btn-primary-play{
-    --bs-btn-padding-x: 1.20rem;
+    --bs-btn-padding-x: 1.7rem;
     --bs-btn-padding-y: 0.6rem;
     font-size: 2.4vw;
     color: #fff;
     font-family: 'Pangolin', cursive;
     background-color: #0d3afdb3;
     cursor: pointer;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .btn-primary-instrct{
@@ -156,6 +155,11 @@ html{
     cursor: pointer;
     margin-top: 6px;
 
+}
+@media  screen and (max-width: 768px) {
+    .col-2{
+        width: 100%;
+    }
 }
 
 .btn-primary-play:hover , .btn-primary-instrct:hover {
@@ -200,19 +204,19 @@ img {
     
 }
 
-.footer > p, a,
+.footer  p, a,
 i {
-    color: #f04c0ba2;
-    padding: 0.3vw;
+    color: #b43706;
+    padding: 0.2vw;
     margin: 0px;
-    font-size: 2vw;
+    font-size: 1.8vw;
     text-align: left;
     text-decoration: none;
 }
 
-.footer > p, a,
+.footer > a,
 i:hover {
-    color: #ef5316ef;
+    color: #ef5316b7;
 }
 
 
