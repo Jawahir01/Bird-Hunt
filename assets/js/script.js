@@ -13,6 +13,8 @@ The most complex function has a cyclomatic complexity value of 5 while the media
 **/
 
 let result = document.getElementById("result");
+let result2 = document.getElementById("timeresult");
+
 endGame.style.display = "none";
 timeOut.style.display = "none";
 
@@ -20,10 +22,9 @@ function initializeGame(event) {
     window.addEventListener("click", shootBullet);
 }
 
-const timer=  () => {
-    window.addEventListener("load", countdown);
+function timer (event){
+    window.addEventListener("play", countdown);
 }
-
 
 
 function shootBullet(event) {
@@ -42,10 +43,9 @@ function shootBullet(event) {
     if (bullets <= 0 ){
         endGame.style.display = 'block';
         result.innerHTML = counts;
-        window.removeEventListener("load", countdown);
+        clearInterval(timerId);
     }
 }
-
 
 //  Countdown 
     var timeLeft = 10;
@@ -58,6 +58,7 @@ function shootBullet(event) {
         if (timeLeft <= -1 ){
             clearTimeout(timerId);
             timeOut.style.display = 'block';
+            result2.innerHTML = counts;
             window.removeEventListener("click", shootBullet);
         }
     }
@@ -75,7 +76,7 @@ function shootBullet(event) {
           }, 2000);
       }
       hourglass();
-      setInterval(hourglass, 5000);
+      setInterval(hourglass, 3000);
 
 window.addEventListener('DOMContentLoaded', initializeGame);
 window.addEventListener('DOMContentLoaded', timer);
