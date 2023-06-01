@@ -59,10 +59,11 @@ Bird Hunt is a fun and challenging game where you can test your shooting skills.
 # **Typography and color scheme**
 
 ## **Colour Scheme**
-...
+...The color scheme in Duck Hunt is designed to create a sense of nostalgia and fun. The bright, primary colors are reminiscent of classic arcade games, and the overall aesthetic is simple and easy to understand. I used the blue background color with white text on the buttons to match the sky of the background image. I also used *** for the title, scores, results and the timer to help create a sense of excitement and challenge. 
 
 ## **Typography**
-...
+...The typography for the Bird Hunt game is clear and easy to read. I used "Pangolin" font which  is a sans-serif font that is designed for use in games. It is a high-contrast font that is easy to read on a variety of devices.
+
  
 # **Technology**
  - ## **Languages Used**
