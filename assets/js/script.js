@@ -2,6 +2,16 @@ let bullets = 10;
 let counts = 0;
 let endGame = document.getElementById("endGame");
 let timeOut = document.getElementById("timeOut")
+/**
+There are 7 functions in this file.
+
+Function with the largest signature take 1 arguments, while the median is 0.
+
+Largest function has 12 statements in it, while the median is 1.
+
+The most complex function has a cyclomatic complexity value of 5 while the median is 1.
+**/
+
 let result = document.getElementById("result");
 endGame.style.display = "none";
 timeOut.style.display = "none";
@@ -14,9 +24,7 @@ const timer=  () => {
     window.addEventListener("load", countdown);
 }
 
-/**
-JS doc here
-**/
+
 
 function shootBullet(event) {
     if (bullets > 0) {
@@ -54,6 +62,7 @@ function shootBullet(event) {
         }
     }
 
+//  sandclock timer 
     function hourglass() {
         var a;
         a = document.getElementById("div1");

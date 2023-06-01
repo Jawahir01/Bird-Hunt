@@ -3,7 +3,7 @@
 
 ![The_website](..)
 
- **To visit the live site click** [here](#)
+ **To visit the live site click** [here](https://jawahir01.github.io/Bird-Hunt/)
 
 
 ## **Site Owner's Goals**
@@ -93,10 +93,15 @@
 
 ## **Code Validation**
 - **HTML**
-    ...
+    - The index.html file was validated by using [HTML validater](https://validator.w3.org/#validate_by_upload)
+    ![html](assets/docs/index_validator.png) and no errors or warnings were found.
+
+    - The game.html file was validated by using [HTML validater](https://validator.w3.org/#validate_by_upload)
+    ![html](assets/docs/game_validator.png) and the errors were about the <img> elements must have an alt attribute on each and after updating, no errors were found
 
 - **CSS**
-    ...
+    The style sheet was validated by using [CSS validater](https://jigsaw.w3.org/css-validator/)
+    ![stylesheet](assets/docs/stylesheet_validator.png) and no errors or warnings were found.
     
 ## **User Story**
 
