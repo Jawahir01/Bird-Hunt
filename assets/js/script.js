@@ -22,9 +22,10 @@ function initializeGame(event) {
     window.addEventListener("click", shootBullet);
 }
 
-function timer (event){
+const timer = () =>{
     window.addEventListener("play", countdown);
 }
+
 
 
 function shootBullet(event) {
