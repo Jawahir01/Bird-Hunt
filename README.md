@@ -1,9 +1,11 @@
-# **Purpose of the project**
-.. 
+# **Bird Hunt Game**
 
-![The_website](..)
+Bird Hunt is a fun and challenging game where you can test your shooting skills. When building the game, I was inspired by the famous Duck Hunt game. So, I created my own version of hunting different kind of birds. The game is easy and I hope you like it.
+- **NOTE** For mobile/small screen users you have to rotate your device in order to play the game.
 
- **To visit the live site click** [here](https://jawahir01.github.io/Bird-Hunt/)
+![The_website](assets/docs/main_page.png)
+
+ **To visit the live game click** [here](https://jawahir01.github.io/Bird-Hunt/)
 
 
 ## **Site Owner's Goals**
@@ -29,26 +31,27 @@
 
 ## **Features**
 
+- **Home Page**
+    The main page has a background picture of a dog and ducks . The page title apears clearly as it centers the page. beneath there are two buttons; play game button that directs the end user to the Game page ans Instructions button that modals to how to play the game.
+  - ![Home_Page](assets/docs/main%20page.png)
+
+- **Game Page** It contains of ten animated pitures of birds. There are two updated texts of a scores (points) and bullets. There is also a timer with snadclock on it.
+  - ![game-page](/assets/docs/game_page.png)
+
  - **Header**
     ..
     ![header](#)
 
 - **Footer**
-    ..
-    ![footer](d#)
+    The footer is at the bottom of the main page. It contains a text and two icons of social media links for the developer, and it clicked it will open in a new tap.
+    ![footer](assets/docs/footer.png)
 
-- **Home Page**
-
-  - 
-
-- **404 Page**
-
-    ![404-page](#)
 
 
 
 ## Future Features
--...
+- Building different rounds for the game and adding diffcultis.
+- Make it Online Multiplayer Game so that user can compete with his friends.
 
 ---
 
@@ -68,29 +71,26 @@
     + JavaScript
 
  - ## **Frameworks, Libraries & Programs Used:**
-    - **Bootstrap ???:**
-    ...
+    
+    - **Bootstrap 5.2.3 and 5.3.0:**
+    Bootstrap was used to assist with the responsiveness and styling of the website.
 
     - **Google Fonts:**
-    ...
-
-    - **Font Awesome ???:**
-    ....
+    Google fonts were linked into the html files throughout the project.
+    
+    - **Font Awesome 4.7.0:**
+    Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
 
     - **GitHub:**
     GitHub is used to store the projects code after being pushed from Git.
 
     - **Print 3D:**
-    ....
-
-    - **Canvas**
-    canvas was used to create the logo.
+    Paint 3D was used to resizing images and editing photos for the website.
 
     - **Miro:**
     Miro was used to create the wireframes during the design process.
 
 # **Testing**
-
 ## **Code Validation**
 - **HTML**
     - The index.html file was validated by using [HTML validater](https://validator.w3.org/#validate_by_upload)
@@ -136,18 +136,14 @@
     5. Click "Save".
     6. Refresh the page and shortly the live link of the website will appeare.
 
-**The live link** https://???
+**The live link** [here](https://jawahir01.github.io/Bird-Hunt/)
 
+---
 
 # **Credits**
-
-## **Content**
-1. ...
-
-
-## **Media**
-1. ...
-
-
-## **Acknowledgements**
-1. ...
+ - ## **Content**
+    1. ...
+    ## **Media**
+     ...
+     ## **Acknowledgements**
+     1. ...
