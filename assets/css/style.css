@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto:ital,wght@0,400;0,500;1,500&display=swap');
 
 /*font-family: 'Pangolin', cursive;
-font-family: 'Roboto', sans-serif;*/
+font-family: 'Roboto', sans-serif;
 
 .mobiles {
     display: none;
@@ -26,7 +26,7 @@ font-family: 'Roboto', sans-serif;*/
     div.container-fluid {
         display: none;
     }
-}
+}*/
 
 body {
     background-image: url(../images/birdhuntTheme.jpg);
@@ -35,6 +35,8 @@ body {
     background-attachment: fixed;
     background-size: 100% 100%;
     overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .game-bg-image {
@@ -70,14 +72,14 @@ html{
     justify-content: center;
     align-items: center;
     color: #d3600e;
-    font-family:"Pangolin",sans-serif ;
-    font-size: 2.3vw;
-    font-weight: 200;
-    width: 80px;
-    height: 80px;
-    background-color: #fcf3d9;
+    font-family:sans-serif ;
+    font-size: 2.7vw;
+    font-weight: 400;
+    max-width: 80px;
+    max-height: 80px;
+    background-color: #e4c465;
     border-radius: 50%;
-    position: absolute;
+    position: relative;
   }
 
 .resultBox {
@@ -134,7 +136,15 @@ html{
     margin-top: 2rem;
 }
 
+/*
+img: post:realtive
+overflow: hidd
+minimize the dragon
 
+js : auto rotate
+js doc
+
+*/
 .btn-primary-play{
     --bs-btn-padding-x: 1.7rem;
     --bs-btn-padding-y: 0.6rem;
@@ -168,10 +178,12 @@ html{
 }
 
 img {
-    width: 100px;
+    width: 120px;
+    max-width: 120px;
+    height: auto;
     position: absolute;
     bottom: 0;
-    animation-fill-mode: forwards;
+    animation-fill-mode:none;
 }
 
 .modal-title {
@@ -271,7 +283,7 @@ i:hover {
 
 #b9{
     left:100%;
-    animation: dragon 12s infinite;
+    animation: dragon 11s infinite;
     animation-timing-function: linear;
 }
 

@@ -1,12 +1,4 @@
-/**There are 9 functions in this file.
-
-Function with the largest signature take 1 arguments, while the median is 0.
-
-Largest function has 14 statements in it, while the median is 1.
-
-The most complex function has a cyclomatic complexity value of 5 while the median is 1.**/
-
-let bullets = 10;
+let bullets = 15;
 let counts = 0;
 let endGame = document.getElementById("endGame");
 let timeOut = document.getElementById("timeOut");
@@ -18,15 +10,9 @@ timeOut.style.display = "none";
 
 function initializeGame(event) {
     window.addEventListener("click", shootBullet);
-}
-
-const timer = () =>{
     window.addEventListener("play", countdown);
-};
-
-const timer2 = () => {
     window.addEventListener("play", appear);
-};
+}
 
 function shootBullet(event) {
     if (bullets > 0) {
@@ -47,6 +33,7 @@ function shootBullet(event) {
         clearInterval(timerId);
         window.removeEventListener("play", appear);
         clearInterval(randomAppear);
+        clearInterval(hourGlass);
 
     }
 }
@@ -61,6 +48,7 @@ function shootBullet(event) {
         timeLeft--;
         if (timeLeft <= -1 ){
             clearTimeout(timerId);
+            clearInterval(hourGlass);
             timeOut.style.display = 'block';
             result2.innerHTML = counts;
             window.removeEventListener("play", appear);
@@ -81,8 +69,8 @@ function shootBullet(event) {
             a.innerHTML = "&#xf253;";
           }, 2000);
       }
-      hourglass();
-      setInterval(hourglass, 3000);
+
+      var hourGlass= setInterval(hourglass, 3000);
 
 
 // .
@@ -92,7 +80,7 @@ var images = [
 ];
 
 // Get the width and height of the screen.
-var width = window.innerWidth;
+var width = document.wi;
 var height = window.innerHeight;
 
 // Create two image elements.
@@ -135,5 +123,4 @@ var randomAppear = setInterval(appear, 1500);
 
 
 window.addEventListener('DOMContentLoaded', initializeGame);
-window.addEventListener('DOMContentLoaded', timer);
-window.addEventListener('DOMContentLoaded', timer2);
+
