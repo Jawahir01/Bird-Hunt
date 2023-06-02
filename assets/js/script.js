@@ -26,7 +26,9 @@ const timer = () =>{
     window.addEventListener("play", countdown);
 }
 
-
+const timer2 = () => {
+    window.addEventListener("play", appear);
+}
 
 function shootBullet(event) {
     if (bullets > 0) {
@@ -45,10 +47,13 @@ function shootBullet(event) {
         endGame.style.display = 'block';
         result.innerHTML = counts;
         clearInterval(timerId);
+        window.removeEventListener("play", appear);
+        clearInterval(randomAppear);
+
     }
 }
 
-//  Countdown 
+//  Countdown Game Timer
     var timeLeft = 10;
     var elem = document.getElementById('countdown-number');
     var timerId = setInterval(countdown, 1000);
@@ -60,11 +65,13 @@ function shootBullet(event) {
             clearTimeout(timerId);
             timeOut.style.display = 'block';
             result2.innerHTML = counts;
-            window.removeEventListener("click", shootBullet);
+            window.removeEventListener("play", appear);
+            window.removeEventListener("click", shootBullet);    // raise a question
+            clearInterval(randomAppear);
         }
     }
 
-//  sandclock timer 
+//  Sandclock Timer 
     function hourglass() {
         var a;
         a = document.getElementById("div1");
@@ -79,5 +86,56 @@ function shootBullet(event) {
       hourglass();
       setInterval(hourglass, 3000);
 
+
+// .
+var images = [
+  { src: "assets/images/crocodile.gif",},
+  {src: "assets/images/hippo.gif",},
+];
+
+// Get the width and height of the screen.
+var width = window.innerWidth;
+var height = window.innerHeight;
+
+// Create two image elements.
+var image1 = document.createElement("img");
+var image2 = document.createElement("img");
+
+// Set the src of the image elements to the images in the array.
+image1.src = images[0].src;
+image2.src = images[1].src;
+
+// Add the image elements to the document.
+document.body.appendChild(image1);
+document.body.appendChild(image2);
+
+// Set the opacity of the image elements to 0.
+image1.style.opacity = 0;
+image2.style.opacity = 0;
+
+// Create a function to make the image elements appear suddenly and randomly on the screen.
+function appear() {
+  // Get a random x and y coordinate.
+  var x = Math.floor(Math.random() * width);
+  var y = Math.floor(Math.random() * height);
+  var x1 = Math.floor(Math.random() * width);
+  var y1 = Math.floor(Math.random() * height);
+
+  // Set the position of the image elements to the random x and y coordinate.
+  image1.style.left = x + "px";
+  image1.style.top = y + "px";
+  image2.style.left = x1 + "px";
+  image2.style.top = y1 + "px";
+
+  // Set the opacity of the image elements to 1.
+  image1.style.opacity = 1;
+  image2.style.opacity = 1;
+}
+
+// Set a timer to call the appear function every 1.5 seconds.
+var randomAppear = setInterval(appear, 1500);
+
+
 window.addEventListener('DOMContentLoaded', initializeGame);
 window.addEventListener('DOMContentLoaded', timer);
+window.addEventListener('DOMContentLoaded', timer2);
