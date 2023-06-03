@@ -10,9 +10,9 @@ timeOut.style.display = "none";
 
 function initializeGame(event) {
     window.addEventListener("click", shootBullet);
-    window.addEventListener("play", hourglass);
-    window.addEventListener("play", countdown);
-    window.addEventListener("play", appear);
+    window.addEventListener("load", hourglass);
+    window.addEventListener("load", countdown);
+    window.addEventListener("load", appear);
 
 }
 var images = [
@@ -24,8 +24,8 @@ var width = window.innerWidth;
 var height = window.innerHeight;
 
 // Create two image elements.
-let image1 = document.createElement("img");
-let image2 = document.createElement("img");
+var image1 = document.createElement("img");
+var image2 = document.createElement("img");
 
 // Set the src of the image elements to the images in the array.
 image1.src = images[0].src;
@@ -61,57 +61,57 @@ function appear() {
 var randomAppear = setInterval(appear, 1500);
 
 
-let turkey = document.getElementById("turkey");
+let dragon = document.getElementById("b9");
 
-    function shootBullet(event) {
-        if (bullets > 0) {
-            bullets--;
-            document.getElementById("currentBullets").innerHTML = bullets;
-            if (event.target.nodeName == ("IMG")) {
-                document.getElementById("gun").play();
-                event.target.style.display = "none";
-                if ((this.image1 ) || (this.image2) || (this.turkey)) {
-                    counts -= 5;
-                } else {
-                    // If the clicked image is the fifth image, subtract its points from the score.
-                    counts += 10;
-                }
-                document.getElementById("currentScore").innerHTML = counts;
-            } else if (event.target.nodeName != ("IMG")) {
-                document.getElementById("misshot").play();
+function shootBullet(event) {
+    if (bullets > 0) {
+        bullets--;
+        document.getElementById("currentBullets").innerHTML = bullets;
+        if (event.target.nodeName == ("IMG")) {
+            document.getElementById("gun").play();
+            event.target.style.display = "none";
+            if ((this != image1) && (this != image2) && (this != dragon)) {
+                counts += 10;
+            } else {
+                // If the clicked image is the fifth image, subtract its points from the score.
+                counts -= 5;
             }
+            document.getElementById("currentScore").innerHTML = counts;
+        } else if (event.target.nodeName != ("IMG")) {
+            document.getElementById("misshot").play();
         }
+    }
 
-        if (bullets <= 0) {
-            clearInterval(timerId);
-            window.removeEventListener("play", appear);
-            clearInterval(randomAppear);
-            clearInterval(hourGlass);
-            // Check the user's points.
-            if (counts > 100) {
-                // Display a message if the user got more than 3000 points.
-                document.getElementById("endtitle").innerHTML = "Wow!! you are on fire";
-                endGame.style.display = 'block';
-                
-            } else if (counts > 70) {
-                // Display a message if the user got between 500 and 3000 points.
-                document.getElementById("endtitle").innerHTML = "Well done, nice shooting skill" ;
-                endGame.style.display= 'block';
-                
-            } else if (counts > 20) {
-                // Display a message if the user got between 50 and 500 points.
-                document.getElementById("endtitle").innerHTML= "Not bad, You need to sharpen your skills";
-                endGame.style.display=  'block';
-                
-            } else if (counts = 0) {
-                // Display a message if the user got 0 points.
-                document.getElementById("endtitle").innerHTML = "You scored nothing .... ";
-                endGame.style.display = "block";
-                
-            }
-            result.innerHTML = counts;
+    if (bullets <= 0) {
+        clearInterval(timerId);
+        window.removeEventListener("load", appear);
+        clearInterval(randomAppear);
+        clearInterval(hourGlass);
+        // Check the user's points.
+        if (counts > 100) {
+            // Display a message if the user got more than 3000 points.
+            document.getElementById("endtitle").innerHTML = "Wow!! You are on fire";
+            endGame.style.display = 'block';
+
+        } else if (counts > 50) {
+            // Display a message if the user got between 500 and 3000 points.
+            document.getElementById("endtitle").innerHTML = "Well done! Nice shooting skills. ";
+            endGame.style.display = 'block';
+
+        } else if (counts > 20) {
+            // Display a message if the user got between 50 and 500 points.
+            document.getElementById("endtitle").innerHTML = "Good job! You need to practice";
+            endGame.style.display = 'block';
+
+        } else if (counts = 0) {
+            // Display a message if the user got 0 points.
+            document.getElementById("endtitle").innerHTML = "You scored nothing .... ";
+            endGame.style.display = "block";
+
         }
-    };
+        result.innerHTML = counts;
+    }
+};
 
 //Countdown Game Timer
 var timeLeft = 15;
@@ -126,7 +126,7 @@ function countdown() {
         clearInterval(hourGlass);
         timeOut.style.display = 'block';
         result2.innerHTML = counts;
-        window.removeEventListener("play", appear);
+        window.removeEventListener("load", appear);
         window.removeEventListener("click", shootBullet);    // raise a question
         clearInterval(randomAppear);
     }

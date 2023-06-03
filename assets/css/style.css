@@ -1,33 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto:ital,wght@0,400;0,500;1,500&display=swap');
 
-/*font-family: 'Pangolin', cursive;
-font-family: 'Roboto', sans-serif;
-
-.mobiles {
-    display: none;
-    width: 300px;
-    height: 140px;
-    top: 16vw;
-    color: #fff;
-    background-color: #696969a6;
-    position: relative;
-    border-radius: 5px;
-    font-size: 3vw;
-    font-family: 'Roboto', serif;
-    margin: 2vw;
-    padding: 1.5vw;
-}
-
-@media only screen and (orientation: portrait){
-    div.mobiles{
-        display: block;
-    }
-
-    div.container-fluid {
-        display: none;
-    }
-}
-*/
 body {
     background-image: url(../images/birdhuntTheme.jpg);
     background-repeat: no-repeat;
@@ -48,9 +20,6 @@ body {
     overflow: hidden;
     margin: 0;
     padding: 0;
-}
-
-html{
     cursor: crosshair;
 }
 
@@ -135,21 +104,12 @@ html{
 }
 
 .gameContainer {
-    width: 55%;
-    height: 350px;
+    max-width: 55%;
+    height: 200px;
     border-radius: 10px;
-    margin-top: 2.5rem;
+    margin-top: 25px;
 }
 
-/*
-img: post:realtive
-overflow: hidd
-minimize the dragon
-
-js : auto rotate
-js doc
-
-*/
 .btn-primary-play{
     --bs-btn-padding-x: 1.7rem;
     --bs-btn-padding-y: 0.6rem;
@@ -171,11 +131,6 @@ js doc
     margin-top: 6px;
 
 }
-@media  screen and (max-width: 768px) {
-    .col-2{
-        width: 100%;
-    }
-}
 
 .btn-primary-play:hover , .btn-primary-instrct:hover {
     background-color: #0d39fdfe;
@@ -183,7 +138,7 @@ js doc
 }
 
 img {
-    max-width: 120px;
+    max-width: 130px;
     height: auto;
     position: absolute;
     bottom: 0;
@@ -239,7 +194,6 @@ i:hover {
 #b1{
     right:100%;
     animation: bird1 8s 3;
-    /*animation-direction: alternate-reverse;*/
     animation-timing-function: linear;
 }
 
@@ -256,7 +210,7 @@ i:hover {
 }
 #b4{
     left:100%;
-    animation: bird4 9s infinite;
+    animation: bird4 9s 3;
     animation-timing-function: linear;
 }
 
@@ -429,3 +383,35 @@ i:hover {
 @keyframes turky {
     0% {right: 0px; bottom: 35px;}
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+    html {
+      width: 100vw;
+      height: 100vh;
+      overflow-x: hidden;
+      top: 100%;
+      left: 0;
+    }
+
+    .gameContainer {
+        height: auto;
+        margin-top: 25%;
+    }
+
+    #endGame {
+        height: auto;
+        max-width: 25rem;
+        left: 20%;
+        margin: 1rem;
+        top: 2rem;
+    }
+    
+    #timeEnd{
+        height: auto;
+        max-width: 20rem;
+        left:20% ;
+        margin: 1rem;
+        top: 3rem;
+    }
+    
+  }
