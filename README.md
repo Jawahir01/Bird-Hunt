@@ -103,6 +103,10 @@ Bird Hunt is a fun and challenging game where you can test your shooting skills.
 - **CSS**
     The style sheet was validated by using [CSS validater](https://jigsaw.w3.org/css-validator/)
     ![stylesheet](assets/docs/stylesheet_validator.png) and no errors or warnings were found.
+
+- **JavaScript**
+    - The javascript file was validated by using [JS validater](https://jshint.com/)
+    - ![js](assets/docs/js_Validator.png) and no errors or warnings were found.
     
 ## **User Story**
 

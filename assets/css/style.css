@@ -193,67 +193,67 @@ i:hover {
 
 #b1{
     right:100%;
-    animation: bird1 8s 3;
+    animation: bird1 8s infinite;
     animation-timing-function: linear;
 }
 
 #b2{
     right:100%;
-    animation: bird2 10s 3;
+    animation: bird2 10s infinite;
     animation-timing-function: linear;
 }
 
 #b3{
     left:100%;
-    animation: bird3 6s 3;
+    animation: bird3 6s infinite;
     animation-timing-function: linear;
 }
 #b4{
     left:100%;
-    animation: bird4 9s 3;
+    animation: bird4 9s infinite;
     animation-timing-function: linear;
 }
 
 #b5{
     left:100%;
-    animation: bird5 9s 3;
+    animation: bird5 9s infinite;
     animation-timing-function: linear;
 }
 
 #b6{
     right:100%;
-    animation: bird6 10s 3;
+    animation: bird6 10s infinite;
     animation-timing-function: linear;
 }
 
 #b7{
     left:100%;
-    animation: bird7 11s 3;
+    animation: bird7 11s infinite;
     animation-timing-function: linear;
     
 }
 
 #b8{
     right:100%;
-    animation: bird8 9s 3;
+    animation: bird8 9s infinite;
     animation-timing-function: linear;
 }
 
 #b9{
     left:100%;
-    animation: dragon 11s 3;
+    animation: dragon 11s infinite;
     animation-timing-function: linear;
 }
 
 #b10{
     left:100%;
-    animation: bird10 11s 3;
+    animation: bird10 11s infinite;
     animation-timing-function: linear;
 }
 
 #b11{
     right:100%;
-    animation: turky 6s 3;
+    animation: turky 6s infinite;
     animation-timing-function: linear;
     animation-delay: 5s;
 }
