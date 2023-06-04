@@ -17,7 +17,7 @@ body {
     background-repeat: no-repeat;
     background-position: bottom;
     background-attachment: fixed;
-    background-size: 100% 100% ;
+    background-size: 100% 100%;
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -28,6 +28,7 @@ body {
     --bs-gutter-x: -15.5rem;
     --bs-gutter-y: 1.3rem;
 }
+
 .homeTilte {
     font-family: 'Pangolin', sans-serif;
     text-align: center;
@@ -44,7 +45,7 @@ body {
     justify-content: center;
     align-items: center;
     color: #d3600e;
-    font-family:sans-serif ;
+    font-family: sans-serif;
     font-size: 2.7vw;
     font-weight: 400;
     width: 80px;
@@ -53,45 +54,45 @@ body {
     border-radius: 50%;
     position: absolute;
     margin-top: 1vw;
-  }
+}
 
 .resultBox {
     --bs-gutter-x: 1rem;
     position: relatiave;
     --bs-gutter-y: 1rem;
     text-align: center;
-} 
+}
 
 #endGame {
     height: 270px;
     width: 30rem;
     border-radius: 10px;
     background-color: #eac880;
-    box-sizing:border-box;
+    box-sizing: border-box;
     position: relative;
     left: 25%;
     margin: 1rem;
     top: 4rem;
 }
 
-#timeEnd{
+#timeEnd {
     height: 250px;
     width: 20rem;
     border-radius: 10px;
-    box-sizing:border-box;
+    box-sizing: border-box;
     background-color: #eac880;
     position: relative;
-    left:24% ;
+    left: 24%;
     margin: 1rem;
     top: 5rem;
 }
 
-#endtitle{
+#endtitle {
     font-family: 'Pangolin', sans-serif;
     text-align: center;
     font-size: 2rem;
     font-weight: 800;
-    color: #de7a29;
+    color: #de7b29;
     padding: 0.2rem
 }
 
@@ -111,7 +112,7 @@ body {
     margin-top: 25px;
 }
 
-.btn-primary-play{
+.btn-primary-play {
     --bs-btn-padding-x: 1.7rem;
     --bs-btn-padding-y: 0.6rem;
     font-size: 2.4vw;
@@ -121,7 +122,7 @@ body {
     cursor: pointer;
 }
 
-.btn-primary-instrct{
+.btn-primary-instrct {
     --bs-btn-padding-x: 1.20rem;
     --bs-btn-padding-y: 0.6rem;
     font-size: 2.3vw;
@@ -133,7 +134,8 @@ body {
 
 }
 
-.btn-primary-play:hover , .btn-primary-instrct:hover {
+.btn-primary-play:hover,
+.btn-primary-instrct:hover {
     background-color: #0d39fdfe;
     color: black;
 }
@@ -154,11 +156,12 @@ img {
     color: #de7a29;
 }
 
-.modal-body h3{
+.modal-body h3 {
     font-family: 'Pangolin', sans-serif;
 }
 
-#scores, #bullets {
+#scores,
+#bullets {
     position: absolute;
     font-size: 25px;
     color: black;
@@ -173,10 +176,11 @@ img {
     width: 100%;
     padding: 1px;
     background-color: #d3d3d35c;
-    
+
 }
 
-.footer  p, a,
+.footer p,
+a,
 i {
     color: #b43706;
     padding: 0.2vw;
@@ -186,212 +190,496 @@ i {
     text-decoration: none;
 }
 
-.footer > a,
+.footer>a,
 i:hover {
     color: #ef5316b7;
 }
 
 
-#b1{
-    right:100%;
+#b1 {
+    right: 100%;
     animation: bird1 8s infinite;
     animation-timing-function: linear;
 }
 
-#b2{
-    right:100%;
+#b2 {
+    right: 100%;
     animation: bird2 10s infinite;
     animation-timing-function: linear;
 }
 
-#b3{
-    left:100%;
+#b3 {
+    left: 100%;
     animation: bird3 6s infinite;
     animation-timing-function: linear;
 }
-#b4{
-    left:100%;
+
+#b4 {
+    left: 100%;
     animation: bird4 9s infinite;
     animation-timing-function: linear;
 }
 
-#b5{
-    left:100%;
-    animation: bird5 9s infinite;
+#b5 {
+    left: 100%;
+    animation: bird5 7s infinite;
     animation-timing-function: linear;
 }
 
-#b6{
-    right:100%;
+#b6 {
+    right: 100%;
     animation: bird6 10s infinite;
     animation-timing-function: linear;
 }
 
-#b7{
-    left:100%;
+#b7 {
+    left: 100%;
     animation: bird7 11s infinite;
     animation-timing-function: linear;
-    
+
 }
 
-#b8{
-    right:100%;
+#b8 {
+    right: 100%;
     animation: bird8 9s infinite;
     animation-timing-function: linear;
 }
 
-#b9{
-    left:100%;
+#b9 {
+    left: 100%;
     animation: dragon 11s infinite;
     animation-timing-function: linear;
 }
 
-#b10{
-    left:100%;
-    animation: bird10 11s infinite;
+#b10 {
+    left: 100%;
+    animation: bird10 10s infinite;
     animation-timing-function: linear;
 }
 
-#b11{
-    right:100%;
-    animation: turky 6s infinite;
+#b11 {
+    right: 100%;
+    animation: turky 5s infinite;
     animation-timing-function: linear;
     animation-delay: 5s;
 }
 
 @keyframes bird1 {
-    0% {right: 0px; top:30px;}
-    5% {top:-15px;}
-    10% {top:20px;}
-    20% {top:-20px;}
-    40% {top:15px;}
-    50% {top:-25px;}
-    60% {top:25px;}
-    80% {top:-30px;}
-    90% {top:20px;}
-    100% {right: 100%; top:30px;}
-    
+    0% {
+        right: 0px;
+        top: 30px;
+    }
+
+    5% {
+        top: -15px;
+    }
+
+    10% {
+        top: 20px;
+    }
+
+    20% {
+        top: -20px;
+    }
+
+    40% {
+        top: 15px;
+    }
+
+    50% {
+        top: -25px;
+    }
+
+    60% {
+        top: 25px;
+    }
+
+    80% {
+        top: -30px;
+    }
+
+    90% {
+        top: 20px;
+    }
+
+    100% {
+        right: 100%;
+        top: 30px;
+    }
+
 }
 
 @keyframes bird2 {
-    0% {right: 0px; top:90px;}
-    5% {top:-15px;}
-    10% {top:50px;}
-    15% {top:-20px}
-    20% {top:70px;}
-    40% {top:-10px;}
-    50% {top:100px;}
-    60% {top:-10px;}
-    80% {top:170px;}
-    90% {top:-20px;}
-    100% {right: 100%; top:220px;}
+    0% {
+        right: 0px;
+        top: 90px;
+    }
+
+    5% {
+        top: -15px;
+    }
+
+    10% {
+        top: 50px;
+    }
+
+    15% {
+        top: -20px
+    }
+
+    20% {
+        top: 70px;
+    }
+
+    40% {
+        top: -10px;
+    }
+
+    50% {
+        top: 100px;
+    }
+
+    60% {
+        top: -10px;
+    }
+
+    80% {
+        top: 170px;
+    }
+
+    90% {
+        top: -20px;
+    }
+
+    100% {
+        right: 100%;
+        top: 220px;
+    }
 }
 
 @keyframes bird3 {
-    0% {left: 0px; top:90px;}
-    5% {top:-15px;}
-    10% {top:50px;}
-    15% {top:-20px}
-    20% {top:70px;}
-    30% {top:-10px;}
-    50% {top:100px;}
-    60% {top:-10px;}
-    80% {top:170px;}
-    90% {top:-20px;}
-    100% {left: 100%; top:220px;}
+    0% {
+        left: 0px;
+        top: 90px;
+    }
+
+    5% {
+        top: -15px;
+    }
+
+    10% {
+        top: 50px;
+    }
+
+    15% {
+        top: -20px
+    }
+
+    20% {
+        top: 70px;
+    }
+
+    30% {
+        top: -10px;
+    }
+
+    50% {
+        top: 100px;
+    }
+
+    60% {
+        top: -10px;
+    }
+
+    80% {
+        top: 170px;
+    }
+
+    90% {
+        top: -20px;
+    }
+
+    100% {
+        left: 100%;
+        top: 220px;
+    }
 }
 
 @keyframes bird4 {
-    0% {left: 0px; bottom:100px;}
-    5% {bottom:-15px;}
-    10% {bottom:90px;}
-    15% {bottom:-20px}
-    20% {bottom:120px;}
-    30% {bottom:-10px;}
-    50% {bottom:100px;}
-    60% {bottom:-10px;}
-    80% {bottom:170px;}
-    90% {bottom:-20px;}
-    100% {left: 100%; bottom:220px;}
+    0% {
+        left: 0px;
+        bottom: 100px;
+    }
+
+    5% {
+        bottom: -15px;
+    }
+
+    10% {
+        bottom: 90px;
+    }
+
+    15% {
+        bottom: -20px
+    }
+
+    20% {
+        bottom: 120px;
+    }
+
+    30% {
+        bottom: -10px;
+    }
+
+    50% {
+        bottom: 100px;
+    }
+
+    60% {
+        bottom: -10px;
+    }
+
+    80% {
+        bottom: 170px;
+    }
+
+    90% {
+        bottom: -20px;
+    }
+
+    100% {
+        left: 100%;
+        bottom: 220px;
+    }
 }
 
 @keyframes bird5 {
-    0% {left: 0px; bottom:150px;}
-    25% {bottom:200px;}
-    50% {bottom:120px;}
-    75% {bottom:200px;}
-    100% {left: 100%; bottom:250px;}
+    0% {
+        left: 0px;
+        bottom: 150px;
+    }
+
+    25% {
+        bottom: 200px;
+    }
+
+    50% {
+        bottom: 120px;
+    }
+
+    75% {
+        bottom: 200px;
+    }
+
+    100% {
+        left: 100%;
+        bottom: 250px;
+    }
 }
 
 
 @keyframes bird6 {
-    0% {right: 0px; top:300px;}
-    5% {top:250px;}
-    10% {top:300px;}
-    15% {top:350px}
-    20% {top:400px;}
-    40% {top:450px;}
-    50% {top:300px;}
-    60% {top:370px;}
-    80% {top:330px;}
-    90% {top:400px;}
-    100% {right: 100%; top:350px;}
+    0% {
+        right: 0px;
+        top: 300px;
+    }
+
+    5% {
+        top: 250px;
+    }
+
+    10% {
+        top: 300px;
+    }
+
+    15% {
+        top: 350px
+    }
+
+    20% {
+        top: 400px;
+    }
+
+    40% {
+        top: 450px;
+    }
+
+    50% {
+        top: 300px;
+    }
+
+    60% {
+        top: 370px;
+    }
+
+    80% {
+        top: 330px;
+    }
+
+    90% {
+        top: 400px;
+    }
+
+    100% {
+        right: 100%;
+        top: 350px;
+    }
 }
 
 @keyframes bird7 {
-    0% {left: 0px; bottom:400px;}
-    5% {bottom:330px;}
-    10% {bottom:380px;}
-    15% {bottom:450px}
-    20% {bottom:320px;}
-    30% {bottom:415px;}
-    50% {bottom:350px;}
-    60% {bottom:400px;}
-    80% {bottom:370px;}
-    90% {bottom:480px;}
-    100% {left: 100%; bottom:420px;}
+    0% {
+        left: 0px;
+        bottom: 400px;
+    }
+
+    5% {
+        bottom: 330px;
+    }
+
+    10% {
+        bottom: 380px;
+    }
+
+    15% {
+        bottom: 450px
+    }
+
+    20% {
+        bottom: 320px;
+    }
+
+    30% {
+        bottom: 415px;
+    }
+
+    50% {
+        bottom: 350px;
+    }
+
+    60% {
+        bottom: 400px;
+    }
+
+    80% {
+        bottom: 370px;
+    }
+
+    90% {
+        bottom: 480px;
+    }
+
+    100% {
+        left: 100%;
+        bottom: 420px;
+    }
 }
 
 @keyframes bird8 {
-    0% {right: 0px; bottom:50px;}
-    5% {bottom:-10px;}
-    10% {bottom:30px;}
-    20% {bottom:-15px;}
-    40% {bottom:25px;}
-    50% {bottom:-20px;}
-    60% {bottom:25px;}
-    80% {bottom:-10px;}
-    90% {bottom:20px;}
-    100% {right: 100%; bottom:30px;}
+    0% {
+        right: 0px;
+        bottom: 50px;
+    }
+
+    5% {
+        bottom: -10px;
+    }
+
+    10% {
+        bottom: 30px;
+    }
+
+    20% {
+        bottom: -15px;
+    }
+
+    40% {
+        bottom: 25px;
+    }
+
+    50% {
+        bottom: -20px;
+    }
+
+    60% {
+        bottom: 25px;
+    }
+
+    80% {
+        bottom: -10px;
+    }
+
+    90% {
+        bottom: 20px;
+    }
+
+    100% {
+        right: 100%;
+        bottom: 30px;
+    }
 }
 
 @keyframes dragon {
-    0% {left: 0px; top:150px;}
-    25% {top:200px;}
-    50% {top:160px;}
-    75% {top:100px;}
-    100% {left: 100%; top:300px;}
+    0% {
+        left: 0px;
+        top: 150px;
+    }
+
+    25% {
+        top: 200px;
+    }
+
+    50% {
+        top: 160px;
+    }
+
+    75% {
+        top: 100px;
+    }
+
+    100% {
+        left: 100%;
+        top: 300px;
+    }
 }
 
 @keyframes bird10 {
-    0% {left: 0px; bottom:150px;}
-    25% {bottom:200px;}
-    50% {bottom:120px;}
-    75% {bottom:200px;}
-    100% {left: 100%; bottom:350px;}
+    0% {
+        left: 0px;
+        bottom: 150px;
+    }
+
+    25% {
+        bottom: 200px;
+    }
+
+    50% {
+        bottom: 120px;
+    }
+
+    75% {
+        bottom: 200px;
+    }
+
+    100% {
+        left: 100%;
+        bottom: 350px;
+    }
 }
 
 @keyframes turky {
-    0% {right: 0px; bottom: 35px;}
+    0% {
+        right: 0px;
+        bottom: 35px;
+    }
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px){
+@media screen and (min-width: 320px) and (max-width: 768px) {
     html {
-      width: 100vw;
-      height: 100vh;
-      overflow-x: hidden;
-      top: 100%;
-      left: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+        top: 100%;
+        left: 0;
     }
 
     .gameContainer {
@@ -406,13 +694,13 @@ i:hover {
         margin: 0.7rem;
         top: 2rem;
     }
-    
-    #timeEnd{
+
+    #timeEnd {
         height: auto;
         max-width: 20rem;
-        left:10% ;
+        left: 10%;
         margin: 0.7rem;
         top: 3rem;
     }
-    
-  }
+
+}

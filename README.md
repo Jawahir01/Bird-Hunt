@@ -1,7 +1,7 @@
 # **Bird Hunt Game**
 
 Bird Hunt is a fun and challenging game where you can test your shooting skills. When building the game, I was inspired by the famous Duck Hunt game. So, I created my own version of hunting different kind of birds. The game is easy and I hope you like it.
-- **NOTE** For mobile/small screen users you have to rotate your device in order to play the game.
+- **NOTE** For mobile/small screen users ...
 
 ![The_website](assets/docs/main_page.png)
 
@@ -9,10 +9,26 @@ Bird Hunt is a fun and challenging game where you can test your shooting skills.
 
 
 ## **Site Owner's Goals**
-- 
+- As a developer, I want to ensure that the game's design and sound effects are immersive and engaging through out the game.
   
 ## **External User's Goals**
+- ### **First time user**
+   - I want to see a landing page that features slightly the old Duck Hunt game so that it trigger me into playing. Knowingly, it is a new version.
+   
+   - I want to easily know where to click the play button, how to play button and also how to contact the game developer.
+   
+  - I want to see the rules of the game.
 
+  - I want to be able to shoot the animals when I click on them.
+
+  - I want to progress through the game and see my points everythime I shoot.
+
+  - I want to see how many bullets are left for me while shooting.
+
+  - I want to see my final result when I finish.
+
+- ### **Regular User**
+    As a returning user, I want the game play to have a high level of replayability.
 
 
 # **UX Design**
@@ -30,39 +46,29 @@ Bird Hunt is a fun and challenging game where you can test your shooting skills.
 
 
 ## **Features**
-
 - **Home Page**
     The main page has a background picture of a dog and ducks . The page title apears clearly as it centers the page. beneath there are two buttons; play game button that directs the end user to the Game page ans Instructions button that modals to how to play the game.
-  - ![Home_Page](assets/docs/main%20page.png)
+   ![Home_Page](assets/docs/main%20page.png)
 
 - **Game Page** It contains of ten animated pitures of birds. There are two updated texts of a scores (points) and bullets. There is also a timer with snadclock on it.
-  - ![game-page](/assets/docs/game_page.png)
-
- - **Header**
-    ..
-    ![header](#)
+   ![game-page](/assets/docs/game_page.png)
 
 - **Footer**
     The footer is at the bottom of the main page. It contains a text and two icons of social media links for the developer, and it clicked it will open in a new tap.
     ![footer](assets/docs/footer.png)
 
-
-
-
-## Future Features
+## **Future Features**
 - Building different rounds for the game and adding diffcultis.
-- Make it Online Multiplayer Game so that user can compete with his friends.
-
----
+- Set a score record for the user everythime he plays and show his highest score recorded.
 
 
 # **Typography and color scheme**
 
 ## **Colour Scheme**
-...The color scheme in Duck Hunt is designed to create a sense of nostalgia and fun. The bright, primary colors are reminiscent of classic arcade games, and the overall aesthetic is simple and easy to understand. I used the blue background color with white text on the buttons to match the sky of the background image. I also used *** for the title, scores, results and the timer to help create a sense of excitement and challenge. 
+ - The color scheme in Duck Hunt is designed to create a sense of nostalgia and fun. The bright, primary colors are reminiscent of classic arcade games, and the overall aesthetic is simple and easy to understand. I used the blue background color with white text on the buttons to match the sky of the background image. I also used **#de7b29** Cherokee Dignity (shades) for the title, scores, results and the timer to help create a sense of excitement and challenge. 
 
 ## **Typography**
-...The typography for the Bird Hunt game is clear and easy to read. I used "Pangolin" font which  is a sans-serif font that is designed for use in games. It is a high-contrast font that is easy to read on a variety of devices.
+- The typography for the Bird Hunt game is clear and easy to read. I used "Pangolin" font which  is a sans-serif font that is designed for use in games. It is a high-contrast font that is easy to read on a variety of devices.
 
  
 # **Technology**
@@ -101,23 +107,18 @@ Bird Hunt is a fun and challenging game where you can test your shooting skills.
     ![html](assets/docs/game_validator.png) and the errors were about the <img> elements must have an alt attribute on each and after updating, no errors were found
 
 - **CSS**
-    The style sheet was validated by using [CSS validater](https://jigsaw.w3.org/css-validator/)
+    - The style sheet was validated by using [CSS validater](https://jigsaw.w3.org/css-validator/)
     ![stylesheet](assets/docs/stylesheet_validator.png) and no errors or warnings were found.
 
 - **JavaScript**
     - The javascript file was validated by using [JS validater](https://jshint.com/)
     - ![js](assets/docs/js_Validator.png) and no errors or warnings were found.
     
-## **User Story**
 
-...
-
-  
-
-## **Test Cases**
+## **Manual Testing**
 ...
  
- ---
+
 
 ## **Fixed Bugs**
 - ### **Using Chrome Devtool:**
@@ -128,11 +129,10 @@ Bird Hunt is a fun and challenging game where you can test your shooting skills.
 
 
 # **Deployment**
-
 - ### **Via github pages:**
 
     To deploy the page via github pges follow these steps:
-    1. On GitHub, navigate to the repository https://???
+    1. On GitHub, navigate to the repository https://github.com/Jawahir01/Bird-Hunt
     2. Click **Settings**.
     3. In the "Code and automation" section of the sidebar, click  Pages.
     4. Under "Build and deployment":
@@ -141,14 +141,23 @@ Bird Hunt is a fun and challenging game where you can test your shooting skills.
     5. Click "Save".
     6. Refresh the page and shortly the live link of the website will appeare.
 
-**The live link** [here](https://jawahir01.github.io/Bird-Hunt/)
+- ### **Local Deployment:**
+    To run the code locally follow these steps:
+    1. Login to your GitHub account.
+    2. Select repository named: Jawahir01/ Bird-Hunt
+    3. Click code toggle button and copy the url (https://github.com/Jawahir01/Bird-Hunt.git)
+    4. In your IDE, open the terminal and run the code
 
----
+    ##  
+        git clone https://github.com/Jawahir01/Bird-Hunt.git
+    The repository will now be cloned in your workspace.
+
+
 
 # **Credits**
- - ## **Content**
+- ## **Content**
     1. ...
-    ## **Media**
+- ## **Media**
      ...
-     ## **Acknowledgements**
+- ## **Acknowledgements**
      1. ...
