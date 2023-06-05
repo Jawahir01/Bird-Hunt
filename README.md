@@ -9,13 +9,13 @@ Bird Hunt is a fun and challenging game where you can test your shooting skills.
 
 
 ## **Site Owner's Goals**
-- As a developer, I want to ensure that the game's design and sound effects are immersive and engaging through out the game.
+- As a developer, I want to ensure that the game's design and sound effects are working well through out the game.
   
 ## **External User's Goals**
 - ### **First time user**
    - I want to see a landing page that features slightly the old Duck Hunt game so that it trigger me into playing. Knowingly, it is a new version.
    
-   - I want to easily know where to click the play button, how to play button and also how to contact the game developer.
+   - I want to easily know where to click the button to play the game. Then, click the play button.
    
   - I want to see the rules of the game.
 
@@ -26,9 +26,11 @@ Bird Hunt is a fun and challenging game where you can test your shooting skills.
   - I want to see how many bullets are left for me while shooting.
 
   - I want to see my final result when I finish.
+  
+  - I want to easly know how to contact the game developer
 
 - ### **Regular User**
-    As a returning user, I want the game play to have a high level of replayability.
+    As a returning user, I want to play the game and get different scores.
 
 
 # **UX Design**
@@ -46,20 +48,21 @@ Bird Hunt is a fun and challenging game where you can test your shooting skills.
 
 
 ## **Features**
-- **Home Page**
+- ### **Existing Features**
+    - **Home Page**
     The main page has a background picture of a dog and ducks . The page title apears clearly as it centers the page. beneath there are two buttons; play game button that directs the end user to the Game page ans Instructions button that modals to how to play the game.
    ![Home_Page](assets/docs/main%20page.png)
 
-- **Game Page** It contains of ten animated pitures of birds. There are two updated texts of a scores (points) and bullets. There is also a timer with snadclock on it.
+  - **Game Page** It contains of ten animated pitures of birds. There are two updated texts of a scores (points) and bullets. There is also a timer with snadclock on it.
    ![game-page](/assets/docs/game_page.png)
 
-- **Footer**
+  - **Footer**
     The footer is at the bottom of the main page. It contains a text and two icons of social media links for the developer, and it clicked it will open in a new tap.
     ![footer](assets/docs/footer.png)
 
-## **Future Features**
-- Building different rounds for the game and adding diffcultis.
-- Set a score record for the user everythime he plays and show his highest score recorded.
+- ### **Future Features**
+  - Building different rounds for the game and adding diffcultis.
+  - Set a score record for the user everythime he plays and show his highest score recorded.
 
 
 # **Typography and color scheme**
@@ -116,16 +119,37 @@ Bird Hunt is a fun and challenging game where you can test your shooting skills.
     
 
 ## **Manual Testing**
-...
+- On clicking the link I expect the user to land on the homepage. He should notice a background image, a centerd title a,two clickable buttons and a footer with two social media icons. It's been tested and working well.
+- On clicking on the instruction button I expect a modal to popup and display the rules on how to play the game. It's been tested and working well.
+- On hovering over the github and linkedin icons in the footer, I expect the icon to get slightly lighter and when clicking the icon, it should take me to the github/linkedin account for the developer. It's been tested and working well.
+- On clicking on the play game button, I expect the user is taken to the game page. It's been tested and working well.
+- On the game page, I expect the user to see birds flying in different directions and two animals poping up randomly on the screen every 1 second. It's been tested and working well.
+- On the game page, I expect the user to see two texts: Score with number 0, Bullets with number 15 and a hourgalss timer icon beneath the texts with number 15. It's been tested and working well.
+- On clicking on a bird, I expect the user to notice that the clicked bird disapeared, the number score rised, the bullets decremented by 1 and the timer is counting down. It's been tested and working well.
+- On keep clicking on the birds, I expect the previous test to happen. It's been tested and working well.
+- On clicking on dragon/hippo/crocodile, I expect the user to notice that the clicked animal disapeared, the number score decremented, the bullets decremented by 1 and the timer is counting down. It's been tested and working well.
+- On clicking on the screen indecating that the user missed shooting the bird, I expect the user to hear a different sound, the score number is the same, the bullets decrements and the timer still counting down. It's been tested and working well.
+- Once the bullets turn into 0, I expect the user to not be able to click any more on any bird left and a pop up message that has a short sentence with the user's score result and a button says paly again. It's been tested and working well.
+- On clicking on the play again button, I expect the user to return to the main page again. It's been tested and working well.
+- On the game page if the hourglass timer went down to 0, I exepect the user to not be able to click any more on any bird left and a pop up message that has a short sentence indecateing that the user has ran out of time and a paly again button. It's been tested and working well.
  
 
 
 ## **Fixed Bugs**
-- ### **Using Chrome Devtool:**
-    - ...
 
 - ### **Using Lighthouse**
-    ...
+    - **Desktop**
+   When ckecking the through lighthouse for desktop devices I got these results for the home page: 
+
+    ![Desktop](docs/../assets/docs/desktop_LH_homePage.png)
+
+    and for the game page:
+    ![Desktop](docs/../assets/docs/desktop_LH_gamePage.png)
+
+    - **Mobile**
+  When ckecking through lighthouse for mobile devices I got these results:
+
+    ![Mobile](******)
 
 
 # **Deployment**
@@ -144,7 +168,7 @@ Bird Hunt is a fun and challenging game where you can test your shooting skills.
 - ### **Local Deployment:**
     To run the code locally follow these steps:
     1. Login to your GitHub account.
-    2. Select repository named: Jawahir01/ Bird-Hunt
+    2. Search for the repository named: Jawahir01/ Bird-Hunt
     3. Click code toggle button and copy the url (https://github.com/Jawahir01/Bird-Hunt.git)
     4. In your IDE, open the terminal and run the code
 
@@ -152,12 +176,18 @@ Bird Hunt is a fun and challenging game where you can test your shooting skills.
         git clone https://github.com/Jawahir01/Bird-Hunt.git
     The repository will now be cloned in your workspace.
 
-
+    ### **The live link:** https://jawahir01.github.io/Bird-Hunt/index.html
 
 # **Credits**
 - ## **Content**
-    1. ...
+    1. The icons in the website were from [Font Awesome](https://fontawesome.com)
+    2. The footer code is edited using the footer sections from https://www.w3schools.com/bootstrap5/
+
 - ## **Media**
-     ...
+     The images of the theme game background in the Home page, the background image of the game page,  birds and animals were from google image.
+
 - ## **Acknowledgements**
-     1. ...
+     1. _Dave Horrocks_, Technical Content Reviewer in Code Institute.
+     2. _Manuel Perez Romero_, My mentor at City of Bristol College.
+     3. _Simen Daehlin_, Solutions Engineer & Student Mentor at Code Institute.
+     4. _Rohit Sharma_, My Mentor Guidance at Code Institute.
