@@ -1,27 +1,24 @@
-// Create a variable to store the score
 let score = 0;
-// Create a variable to store the bullets
 let bullets = 15;
-// Create a variable to stroe the End Game Message block.
 let endGame = document.getElementById("endGame");
-// Create a variable to store Time End message block
 let timeOut = document.getElementById("timeEnd");
-// Create a variable to store the Result
 let result = document.getElementById("result");
 
-//..let result2 = document.getElementById("timeresult");
-
-// Hide The End Game message block
 endGame.style.display = "none";
-// Hide The Time End message block
 timeOut.style.display = "none";
-
-
-
-/* Create a function that will be called later from the DOMContentLoaded event
+/*  Start initiliase the Game Create a function that will be called later from the DOMContentLoaded event
 listener, and call the startGame() function, the hourglass() function, the gameTime()
  function and the popAnimals() function
-*/
+
+
+delete <br>
+opacitiy for the animals written in css
+image1 : hippo
+image2 : crocodile
+
+rewrite the alt attr for the images
+div1= hourglass
+uncomment uncessery code.. */
 function initializeGame(event) {
     startGame();
     hourglass();
@@ -29,54 +26,50 @@ function initializeGame(event) {
     popupAnimals();
 }
 
-// Create a function to make the image elements appear suddenly and randomly on the screen.
+/* Create a function to make the hippo and the crocodile elements appear
+ suddenly and randomly on the screen.*/
 
-// Get the width and height of the screen.
-var width = window.innerWidth;
-var height = window.innerHeight;
+let width = window.innerWidth;
+let height = window.innerHeight;
 
-// Create a variable to store the elements of the hippo and corocodile images.
-var image1 = document.getElementById("b12");
-var image2 = document.getElementById("b13");
+let crocodile = document.getElementById("crocodile");
+let hippo = document.getElementById("hippo");
 
-// Now create the function
 function popupAnimals() {
 
-    // Get a random x and y coordinate.
-    var x = Math.floor(Math.random() * width);
-    var y = Math.floor(Math.random() * height);
-    var x1 = Math.floor(Math.random() * width);
-    var y1 = Math.floor(Math.random() * height);
+    let x = Math.floor(Math.random() * width);
+    let y = Math.floor(Math.random() * height);
+    let x1 = Math.floor(Math.random() * width);
+    let y1 = Math.floor(Math.random() * height);
 
     // Set the position of the image elements to the random x and y coordinate.
-    image1.style.left = x + "px";
-    image1.style.top = y + "px";
-    image2.style.left = x1 + "px";
-    image2.style.top = y1 + "px";
+    crocodile.style.left = x + "px";
+    crocodile.style.top = y + "px";
+    hippo.style.left = x1 + "px";
+    hippo.style.top = y1 + "px";
 
-    // Set the opacity of the image elements to 1.
-    image1.style.opacity = 1;
-    image2.style.opacity = 1;
+    crocodile.style.opacity = 1;
+    hippo.style.opacity = 1;
 }
 
 // Set a timer to call the popupAnimals function every 1.5 seconds.
-var randomAppear = setInterval(popupAnimals, 1500);
+let randomAppear = setInterval(popupAnimals, 1500);
 
 // Create an array of the images and their corresponding points
-var images = [
-    { id: "b1", points: 20 },
-    { id: "b2", points: 30 },
-    { id: "b3", points: 100 },
-    { id: "b4", points: 50 },
-    { id: "b5", points: 200 },
-    { id: "b6", points: 30 },
-    { id: "b7", points: 50 },
-    { id: "b8", points: 20 },
-    { id: "b9", points: -20 },
-    { id: "b10", points: 50 },
-    { id: "b11", points: 500 },
-    { id: "b12", points: -10 },
-    { id: "b13", points: -15 },
+let images = [
+    { id: "flamingo", points: 20 },
+    { id: "crow", points: 30 },
+    { id: "pelican", points: 100 },
+    { id: "blueBird", points: 50 },
+    { id: "crane", points: 200 },
+    { id: "flamingo", points: 20 },
+    { id: "blueBird", points: 50 },
+    { id: "flamingo", points: 20 },
+    { id: "dragon", points: -20 },
+    { id: "blueBird", points: 50 },
+    { id: "turky", points: 500 },
+    { id: "crocodile", points: -10 },
+    { id: "hippo", points: -30 },
 ];
 
 // Listen for clicks on all of the images
@@ -89,104 +82,71 @@ function startGame() {
 
 // Create the game function 
 function shootBullet(event) {
-    // Chick if the user has bullets and decrement the bullets on each shot
+  
     if (bullets > 0) {
         bullets--;
-        // Display the left bullets 
         document.getElementById("currentBullets").innerHTML = bullets;
-        // Create a varaiblr that takes the target event (click)
-        var image = event.target;   
-        // If the user clicked on an image element
-        if (image.nodeName == ("IMG")) {
-            // Play the shot sount
+        let targetBird = event.target;   
+        if (targetBird.nodeName == ("IMG")) {
             document.getElementById("gun").play();
-            // Hide the clicked image 
-            image.style.display = "none";
-            // Create a variable that loops through the images and get each image's point 
-            let point = images.find(i => i.id === image.id).points;
-            // Add or subtract points from the score based on the image
+            targetBird.style.display = "none";
+            let point = images.find(i => i.id === targetBird.id).points;
             score += point;
-            // Display the score on the screen
             document.getElementById("currentScore").innerHTML = score;
-        } else if (image.nodeName != ("IMG")) {
-            // If the user did not click on an image play a different
+        } else if (targetBird.nodeName != ("IMG")) {
             document.getElementById("misshot").play();
         }
     }
-    // If the user finished the bullets
+
     if (bullets <= 0) {
         // Stop the timer
         clearInterval(timerId);
-        // Stop the popupAnimals function 
         window.removeEventListener("load", popupAnimals);
         clearInterval(randomAppear);
         clearInterval(hourGlass);
+
         // Check the user's points.
+
         if (score > 800) {
-            // Display a message if the user got more than 800 points.
             document.getElementById("endtitle").innerHTML = "Wow!! You are on fire";
-            endGame.style.display = 'block';
-
         } else if (score> 400) {
-            // Display a message if the user got between 500 and 800 points.
             document.getElementById("endtitle").innerHTML = "Well done! Nice shooting skills. ";
-            endGame.style.display = 'block';
-
         } else if (score > 100) {
-            // Display a message if the user got between 100 and 400 points.
             document.getElementById("endtitle").innerHTML = "Good job! You have the skills.";
-            endGame.style.display = 'block';
-
         } else if (score > 10) {
-            // Display a message if the user got between 10 and 100 points.
             document.getElementById("endtitle").innerHTML = "Not bad! You need to practice.";
-            endGame.style.display = 'block';
-
         } else if (score == 0) {
-            // Display a message if the user got 0 points.
             document.getElementById("endtitle").innerHTML = "You scored nothing .... ";
-            endGame.style.display = "block";
-
         }
-        // Display the total points
+        endGame.style.display = 'block';
         result.innerHTML = score;
     }
 }
 
-//Creat a gameTimer function
 
-//Create a varaible to store the time
-var timeLeft = 25;
-// Create a varaible to store the element of the timeleft
-var elem = document.getElementById('countdown-number');
-
-// Set a timer to call the gameTimer function every 1 second
-var timerId = setInterval(gameTimer, 1000);
+let timeLeft = 25;
+let elem = document.getElementById('countdown-number');
+let timerId = setInterval(gameTimer, 1000);
 
 function gameTimer() {
-    // Display the time 
     elem.innerHTML = timeLeft;
     timeLeft--;
-    // If the time ends
     if (timeLeft <= -1) {
-        // Stop the Timer
         clearTimeout(timerId);
-        // Stop the Hour Glass Timer
         clearInterval(hourGlass);
-        // Display the time out message
         timeOut.style.display = 'block';
-        // Stope the pop up animals function  
         window.removeEventListener("load", popupAnimals);
-        // Stop the game function
         window.removeEventListener("click", shootBullet);    // raise a question?!!
         clearInterval(randomAppear);
     }
 }
 
+let hourGlass = setInterval(hourglass, 1000);
+
 //  Hour Glass Timer * font Awesome icon
 function hourglass() {
-    var a;
-    a = document.getElementById("div1");
+    let a;
+    a = document.getElementById("hourglass");
     a.innerHTML = "&#xf251;";
     setTimeout(function () {
         a.innerHTML = "&#xf252;";
@@ -195,9 +155,6 @@ function hourglass() {
         a.innerHTML = "&#xf253;";
     }, 2000);
 }
-// Set a timer to call the hour function every 1 second
-var hourGlass = setInterval(hourglass, 1000);
-
 
 // Set an event listener to the initializeGame function once the page is loaded
 window.addEventListener('DOMContentLoaded', initializeGame);

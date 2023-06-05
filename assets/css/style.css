@@ -145,7 +145,10 @@ img {
     height: auto;
     position: absolute;
     bottom: 0;
+}
 
+.popingAnimals{
+    opacity: 0;
 }
 
 .modal-title {
@@ -176,7 +179,6 @@ img {
     width: 100%;
     padding: 1px;
     background-color: #d3d3d35c;
-
 }
 
 .footer p,
@@ -196,75 +198,75 @@ i:hover {
 }
 
 
-#b1 {
+#flamingo {
     right: 100%;
-    animation: bird1 8s infinite;
+    animation: flamingo 8s infinite;
     animation-timing-function: linear;
 }
 
-#b2 {
+#crow {
     right: 100%;
-    animation: bird2 10s infinite;
+    animation: crow 10s infinite;
     animation-timing-function: linear;
 }
 
-#b3 {
+#pelican {
     left: 100%;
-    animation: bird3 6s infinite;
+    animation: pelican 6s infinite;
     animation-timing-function: linear;
 }
 
-#b4 {
+#blueBird {
     left: 100%;
-    animation: bird4 9s infinite;
+    animation: blueBird 9s infinite;
     animation-timing-function: linear;
 }
 
-#b5 {
+#crane {
     left: 100%;
-    animation: bird5 7s infinite;
+    animation: crane 7s infinite;
     animation-timing-function: linear;
 }
 
-#b6 {
+#flamingo {
     right: 100%;
-    animation: bird6 10s infinite;
+    animation: flamingo 7s infinite;
     animation-timing-function: linear;
 }
 
-#b7 {
+#blueBird {
     left: 100%;
-    animation: bird7 11s infinite;
+    animation: blueBird 11s infinite;
     animation-timing-function: linear;
 
 }
 
-#b8 {
+#flamingo {
     right: 100%;
-    animation: bird8 9s infinite;
+    animation: flamingo 9s infinite;
     animation-timing-function: linear;
 }
 
-#b9 {
+#dragon {
     left: 100%;
     animation: dragon 11s infinite;
     animation-timing-function: linear;
 }
 
-#b10 {
+#blueBird {
     left: 100%;
-    animation: bird10 10s infinite;
+    animation: blueBird 10s infinite;
     animation-timing-function: linear;
 }
 
-#b11 {
+#turky {
     right: 100%;
     animation: turky 5s infinite;
     animation-timing-function: linear;
     animation-delay: 5s;
 }
 
-@keyframes bird1 {
+@keyframes flamingo {
     0% {
         right: 0px;
         top: 30px;
@@ -309,7 +311,7 @@ i:hover {
 
 }
 
-@keyframes bird2 {
+@keyframes crow {
     0% {
         right: 0px;
         top: 90px;
@@ -357,7 +359,7 @@ i:hover {
     }
 }
 
-@keyframes bird3 {
+@keyframes pelican {
     0% {
         left: 0px;
         top: 90px;
@@ -405,7 +407,7 @@ i:hover {
     }
 }
 
-@keyframes bird4 {
+@keyframes blueBird {
     0% {
         left: 0px;
         bottom: 100px;
@@ -453,7 +455,7 @@ i:hover {
     }
 }
 
-@keyframes bird5 {
+@keyframes crane {
     0% {
         left: 0px;
         bottom: 150px;
@@ -478,7 +480,7 @@ i:hover {
 }
 
 
-@keyframes bird6 {
+@keyframes flamingo {
     0% {
         right: 0px;
         top: 300px;
@@ -526,7 +528,7 @@ i:hover {
     }
 }
 
-@keyframes bird7 {
+@keyframes blueBird {
     0% {
         left: 0px;
         bottom: 400px;
@@ -574,7 +576,7 @@ i:hover {
     }
 }
 
-@keyframes bird8 {
+@keyframes flamingo {
     0% {
         right: 0px;
         bottom: 50px;
@@ -642,7 +644,7 @@ i:hover {
     }
 }
 
-@keyframes bird10 {
+@keyframes blueBird {
     0% {
         left: 0px;
         bottom: 150px;
