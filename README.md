@@ -37,14 +37,8 @@ Bird Hunt is a fun and challenging game where you can test your shooting skills.
 
 ## **Wireframes**
 
- - **Desktop Wireframe using Miro:**
-    ![Desktop view](#)
-
- - **Tablet Wireframe using Miro:**
-    ![Tablet view](#)
-
- - **Mobile Wireframe using Miro:**
-    ![Mobile view](#)
+ - **Desktop/ Tablet/ Mobile Wireframe using Miro:**
+    ![view](/assets/docs/wireframe.png)
 
 
 ## **Features**
