@@ -46,16 +46,16 @@ let randomAppear = setInterval(popupAnimals, 1500);
 
 // Create an array of the images and their corresponding points
 let images = [
-    { id: "flamingo", points: 20 },
+    { id: "flamingo_1", points: 20 },
     { id: "crow", points: 30 },
     { id: "pelican", points: 100 },
-    { id: "blueBird", points: 50 },
+    { id: "blueBird_1", points: 50 },
     { id: "crane", points: 200 },
-    { id: "flamingo", points: 20 },
-    { id: "blueBird", points: 50 },
-    { id: "flamingo", points: 20 },
+    { id: "flamingo_2", points: 20 },
+    { id: "blueBird_2", points: 50 },
+    { id: "flamingo_3", points: 20 },
     { id: "dragon", points: -20 },
-    { id: "blueBird", points: 50 },
+    { id: "blueBird_3", points: 50 },
     { id: "turky", points: 500 },
     { id: "crocodile", points: -10 },
     { id: "hippo", points: -30 },
