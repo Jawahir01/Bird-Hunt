@@ -3,22 +3,11 @@ let bullets = 15;
 let endGame = document.getElementById("endGame");
 let timeOut = document.getElementById("timeEnd");
 let result = document.getElementById("result");
-
 endGame.style.display = "none";
 timeOut.style.display = "none";
-/*  Start initiliase the Game Create a function that will be called later from the DOMContentLoaded event
-listener, and call the startGame() function, the hourglass() function, the gameTime()
- function and the popAnimals() function
 
+/*  Start initiliase the Game  */
 
-delete <br>
-opacitiy for the animals written in css
-image1 : hippo
-image2 : crocodile
-
-rewrite the alt attr for the images
-div1= hourglass
-uncomment uncessery code.. */
 function initializeGame(event) {
     startGame();
     hourglass();

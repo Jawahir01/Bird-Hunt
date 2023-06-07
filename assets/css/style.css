@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto:ital,wght@0,400;0,500;1,500&display=swap');
 
-body {
+.bg-main-page {
     background-image: url(../images/birdhuntTheme.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
@@ -690,7 +690,7 @@ i:hover {
     }
 
     #endGame {
-        height: auto;
+        max-height: auto;
         max-width: 25rem;
         left: 10%;
         margin: 0.7rem;
@@ -698,7 +698,7 @@ i:hover {
     }
 
     #timeEnd {
-        height: auto;
+        max-height: auto;
         max-width: 20rem;
         left: 10%;
         margin: 0.7rem;
