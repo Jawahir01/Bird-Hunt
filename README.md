@@ -53,6 +53,10 @@ Bird Hunt is a fun and challenging game where you can test your shooting skills.
   There is also a timer with hourglass on it to remind the user that he only have _25sec_  to finish the game.
    ![game-page](/assets/docs/game_page.png)
 
+   - **Game instructions**
+  When the player click on Instruction button a pop up box will appear ont he screen to show the player the rules of the game.
+  ![modal box](assets/docs/modal.png)
+
    - **Result Box**
   When the player finishes all the bullets, a small box will pop up on the screen showing the player's final score and a comment regarding his score, underneath there is a button for the player tp play the game again.
   ![Result box](assets/docs/resultbox.png)
@@ -138,7 +142,8 @@ For the testing documentations, please chick [TEST.md](/TEST.md)
 # **Credits**
 - ## **Content**
     1. The icons in the website were from [Font Awesome](https://fontawesome.com)
-    2. The footer code is edited using the footer sections from https://www.w3schools.com/bootstrap5/
+    2. The hourglass code from http://www.w3schools.com
+    3. The footer code is edited using the footer sections from https://www.w3schools.com/bootstrap5/
 
 - ## **Media**
      The images of the theme game background in the Home page, the background image of the game page,  birds and animals were from google image.
