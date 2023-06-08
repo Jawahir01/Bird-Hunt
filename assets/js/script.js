@@ -6,7 +6,7 @@ let result = document.getElementById("result");
 endGame.style.display = "none";
 timeOut.style.display = "none";
 
-/*  Start initiliase the Game  */
+/*  Start initialize the Game  */
 
 function initializeGame(event) {
     startGame();
@@ -89,6 +89,7 @@ function shootBullet(event) {
 
     if (bullets <= 0) {
         // Stop the timer
+
         clearInterval(timerId);
         window.removeEventListener("load", popupAnimals);
         clearInterval(randomAppear);
@@ -111,7 +112,6 @@ function shootBullet(event) {
         result.innerHTML = score;
     }
 }
-
 
 let timeLeft = 25;
 let elem = document.getElementById('countdown-number');

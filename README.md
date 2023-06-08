@@ -6,8 +6,25 @@ Bird Hunt is a fun and challenging game where you can test your shooting skills.
 
 ![The_website](assets/docs/main_page.png)
 
- **To visit the live game click** [here](https://jawahir01.github.io/Bird-Hunt/)
+ **To visit the live game click** [here](https://jawahir01.github.io/Bird-Hunt/).
 
+# **Table Of Contents**
+- [**Bird Hunt Game**](#bird-hunt-game)
+- [**Table Of Contents**](#table-of-contents)
+  - [**Site Owner's Goals**](#site-owners-goals)
+  - [**External User's Goals**](#external-users-goals)
+- [**UX Design**](#ux-design)
+  - [**Wireframes**](#wireframes)
+  - [**Features**](#features)
+- [**Typography and color scheme**](#typography-and-color-scheme)
+  - [**Colour Scheme**](#colour-scheme)
+  - [**Typography**](#typography)
+- [**Technology**](#technology)
+- [**Testing**](#testing)
+- [**Deployment**](#deployment)
+- [**Credits**](#credits)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ## **Site Owner's Goals**
 - As a developer, I want to ensure that the game's design and sound effects are working well through out the game.
@@ -58,7 +75,7 @@ Bird Hunt is a fun and challenging game where you can test your shooting skills.
   ![modal box](assets/docs/modal.png)
 
    - **Result Box**
-  When the player finishes all the bullets, a small box will pop up on the screen showing the player's final score and a comment regarding his score, underneath there is a button for the player tp play the game again.
+  When the player finishes all the bullets, a small box will pop up on the screen showing the player's final score and a comment regarding his score, underneath there is a button for the player to play the game again.
   ![Result box](assets/docs/resultbox.png)
    -  **End of Time Box**
     If the player ran out of time a small box will pop up on the screen informing that the time has finished. also,there is a button for the player tp play the game again.
@@ -111,7 +128,7 @@ Bird Hunt is a fun and challenging game where you can test your shooting skills.
     Miro was used to create the wireframes during the design process.
 
 # **Testing**
-For the testing documentations, please chick [TEST.md](/TEST.md)
+For the testing documentations, please checck [TEST.md](/TEST.md)
 
 # **Deployment**
 - ### **Via github pages:**
