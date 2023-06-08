@@ -3,6 +3,7 @@ let bullets = 15;
 let endGame = document.getElementById("endGame");
 let timeOut = document.getElementById("timeEnd");
 let result = document.getElementById("result");
+let gameOver = document.getElementById("gameOver");
 endGame.style.display = "none";
 timeOut.style.display = "none";
 
@@ -98,15 +99,17 @@ function shootBullet(event) {
         // Check the user's points.
 
         if (score > 800) {
-            document.getElementById("endtitle").innerHTML = "Wow!! You are on fire";
+            gameOver.innerHTML = "Wow!! You are on fire";
         } else if (score> 400) {
-            document.getElementById("endtitle").innerHTML = "Well done! Nice shooting skills. ";
+            gameOver.innerHTML = "Well done! Nice shooting skills. ";
         } else if (score > 100) {
-            document.getElementById("endtitle").innerHTML = "Great job! You have the skills.";
+            gameOver.innerHTML = "Great job! You have the skills.";
         } else if (score > 10) {
-            document.getElementById("endtitle").innerHTML = "Good, but You need to practice.";
+            gameOver.innerHTML = "Good, but You need to practice.";
         } else if (score == 0) {
-            document.getElementById("endtitle").innerHTML = "Sorry! .... ";
+            gameOver.innerHTML = "Sorry! but .... ";
+        } else if (score < 0) {
+            gameOver.innerHTML = "Wrong Playing ... ";
         }
         endGame.style.display = 'block';
         result.innerHTML = score;

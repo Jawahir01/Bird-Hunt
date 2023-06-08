@@ -141,12 +141,21 @@ img {
     margin: 10% auto;
 }
 
-#endtitle {
+#gameOver {
     font-family: 'Pangolin', sans-serif;
     text-align: center;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 800;
-    color: #de7b29;
+    color: #b43706;
+    padding: 5px 2px;
+}
+
+#endTimeTitle{
+    font-family: 'Pangolin', sans-serif;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 800;
+    color: #b43706;
     padding: 5px 2px;
 }
 
