@@ -18,65 +18,72 @@
 
 
 <body class="game-bg-image">
-  <div class="container">
-    <img id="flamingo_1" src="assets/images/flamingo.gif" alt="flying_flamingo">
-    <img id="crow" src="assets/images/crow.gif" alt="flying_crow">
-    <img id="pelican" src="assets/images/pelican.gif" alt="flying_pelican">
-    <img id="blueBird_1" src="assets/images/blueBird.gif" alt="flying_blueBird">
-    <img id="crane" src="assets/images/crane.gif" alt="flying_crane">
-    <img id="flamingo_2" src="assets/images/flamingo.gif" alt="flying_flamingo">
-    <img id="blueBird_2" src="assets/images/blueBird.gif" alt="flying_blueBird">
-    <img id="flamingo_3" src="assets/images/flamingo.gif" alt="flying_flamingo">
-    <img id="dragon" src="assets/images/dragon.gif" alt="flying_dragon">
-    <img id="blueBird_3" src="assets/images/blueBird.gif" alt="flying_blueBird">
-    <img id="turky" src="assets/images/turky.gif" alt="running_turky">
-    <img id="crocodile" src="assets/images/crocodile.gif" alt="crocodile" class="popingAnimals">
-    <img id="hippo" src="assets/images/hippo.gif" alt="hippo" class="popingAnimals">
-  </div>
+  <div class="game-page-container">
+    <div class="gameContainer">
+      <img id="flamingo_1" src="assets/images/flamingo.gif" alt="flying_flamingo">
+      <img id="crow" src="assets/images/crow.gif" alt="flying_crow">
+      <img id="pelican" src="assets/images/pelican.gif" alt="flying_pelican">
+      <img id="blueBird_1" src="assets/images/blueBird.gif" alt="flying_blueBird">
+      <img id="crane" src="assets/images/crane.gif" alt="flying_crane">
+      <img id="flamingo_2" src="assets/images/flamingo.gif" alt="flying_flamingo">
+      <img id="blueBird_2" src="assets/images/blueBird.gif" alt="flying_blueBird">
+      <img id="flamingo_3" src="assets/images/flamingo.gif" alt="flying_flamingo">
+      <img id="dragon" src="assets/images/dragon.gif" alt="flying_dragon">
+      <img id="blueBird_3" src="assets/images/blueBird.gif" alt="flying_blueBird">
+      <img id="turky" src="assets/images/turky.gif" alt="running_turky">
+      <img id="crocodile" src="assets/images/crocodile.gif" alt="crocodile" class="popingAnimals">
+      <img id="hippo" src="assets/images/hippo.gif" alt="hippo" class="popingAnimals">
+    </div>
 
-  <div id="scores" class="display-3">Score : <span id="currentScore">0</span></div><br>
-  <div id="bullets" class="display-3">Bullets : <span id="currentBullets">15</span></div><br>
-  <div id="countdown">
-    <i id="hourglass" class="fa"> </i>
-    <h3 id="countdown-number">25</h3>
-  </div>
-
-
-  <audio id="gun">
-    <source src="assets/music/shot.mp3" type="audio/mp3">
-  </audio>
-  <audio id="misshot">
-    <source src="assets/music/misshoot.mp3">
-  </audio>
+    <div id="scores" class="display-3">Score : <span id="currentScore">0</span></div><br>
+    <div id="bullets" class="display-3">Bullets : <span id="currentBullets">15</span></div><br>
+    <div id="countdown">
+      <i id="hourglass" class="fa"> </i>
+      <h3 id="countdown-number">25</h3>
+    </div>
 
 
-  <div class="container-fluid m-3" id="endGame">
-    <div class="row row-cols-1 resultBox">
-      <div class="col">
-        <h3 id="endtitle"> </h3>
-      </div>
-      <div class="col">
-        <p class="endresult"> You have Scored: <span id="result">0</span></p>
-      </div>
-      <div class="col">
-        <a href="index.html" class="btn btn-primary-play btn-sm">play again</a>
+    <audio id="gun">
+      <source src="assets/music/shot.mp3" type="audio/mp3">
+    </audio>
+    <audio id="misshot">
+      <source src="assets/music/misshoot.mp3">
+    </audio>
+
+
+    <div class="container-fluid" id="endGame">
+      <div class="row row-cols-1 resultBox">
+        <div class="col">
+          <h3 id="endtitle"> </h3>
+        </div>
+        <div class="col">
+          <p class="endresult"> You have Scored: <span id="result">0</span></p>
+        </div>
+        <div class="col">
+          <a href="index.html" class="btn btn-primary-play btn-sm">play again</a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="container-fluid mt-3" id="timeEnd">
-    <div class="row row-cols-1 resultBox">
-      <div class="col">
-        <h3 id="endtitle">Ops... times up! <br> </h3>
-        <p class="h3">Try faster next time. </p>
-      </div>
-      <!--<div class="col">
-        <p class="endresult"> You Scored: <span id="timeresult">0</span></p>
-      </div>-->
-      <div class="col">
-        <a href="index.html" class="btn btn-primary-play btn-sm">play again</a>
+    <div class="container-fluid mt-3" id="timeEnd">
+      <div class="row row-cols-1 resultBox">
+        <div class="col" id="endtitle">
+          <h3 >Ops... times up! <br> </h3>
+          <p class="h4">Try faster next time. </p>
+        </div>
+        <div class="col">
+          <a href="index.html" class="btn btn-primary-play btn-sm">play again</a>
+        </div>
       </div>
     </div>
+    
+  </div>
+
+  <div class="mobiles">
+    <p class="h3">I'm sorry,, the resolution for this game is too small.
+      <i class="fa fa-sad-tear" aria-hidden="true"></i>
+    </p>
+    <p class="h5">Please rotate your device to enjoy the game! or use a wider screen.</p>
   </div>
 
   <script src="assets/js/script.js">

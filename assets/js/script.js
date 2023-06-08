@@ -101,11 +101,11 @@ function shootBullet(event) {
         } else if (score> 400) {
             document.getElementById("endtitle").innerHTML = "Well done! Nice shooting skills. ";
         } else if (score > 100) {
-            document.getElementById("endtitle").innerHTML = "Good job! You have the skills.";
+            document.getElementById("endtitle").innerHTML = "Great job! You have the skills.";
         } else if (score > 10) {
-            document.getElementById("endtitle").innerHTML = "Not bad! You need to practice.";
+            document.getElementById("endtitle").innerHTML = "Good, but You need to practice.";
         } else if (score == 0) {
-            document.getElementById("endtitle").innerHTML = "You scored nothing .... ";
+            document.getElementById("endtitle").innerHTML = "Sorry! .... ";
         }
         endGame.style.display = 'block';
         result.innerHTML = score;
