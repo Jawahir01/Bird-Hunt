@@ -1,7 +1,8 @@
 # **Bird Hunt Game**
 
-Bird Hunt is a fun and challenging game where you can test your shooting skills. When building the game, I was inspired by the famous Duck Hunt game. So, I created my own version of hunting different kind of birds. The game is easy and I hope you like it.
-- **NOTE** For mobile/small screen users ...
+Bird Hunt is a fun and challenging game where you can test your shooting skills. When building the game, I was inspired by the famous Duck Hunt game. So, I created my own version of hunting different kind of birds. The game is easy and I hope you like it have fun.
+
+- **NOTE** This game is designed to be played on a wider screen size. If you are using a mobile device or other small screen, please rotate your device to landscape mode to ensure optimal gameplay.
 
 ![The_website](assets/docs/main_page.png)
 
@@ -47,11 +48,22 @@ Bird Hunt is a fun and challenging game where you can test your shooting skills.
     The main page has a background picture of a dog and ducks . The page title apears clearly as it centers the page. beneath there are two buttons; play game button that directs the end user to the Game page ans Instructions button that modals to how to play the game.
    ![Home_Page](assets/docs/main%20page.png)
 
-  - **Game Page** It contains of ten animated pitures of birds. There are two updated texts of a scores (points) and bullets. There is also a timer with snadclock on it.
+  - **Game Page** It contains ten animated images of birds alongside three different animals (dragon/crocodile/hippo).
+  There are two updated texts of a scores (points) to show the user's recent points and (bullets) to show the user how many bullets left.
+  There is also a timer with hourglass on it to remind the user that he only have _25sec_  to finish the game.
    ![game-page](/assets/docs/game_page.png)
 
+   - **Result Box**
+  When the player finishes all the bullets, a small box will pop up on the screen showing the player's final score and a comment regarding his score, underneath there is a button for the player tp play the game again.
+  ![Result box](assets/docs/resultbox.png)
+   -  **End of Time Box**
+    If the player ran out of time a small box will pop up on the screen informing that the time has finished. also,there is a button for the player tp play the game again.
+    ![EndofTime box](assets/docs/timeEnd.png)
+
   - **Footer**
-    The footer is at the bottom of the main page. It contains a text and two icons of social media links for the developer, and it clicked it will open in a new tap.
+    A slightly transparent footer is located at the bottom of the main page. It contains the following text and social media icons:
+    - Text: The game developer.
+    - Icons: github and LinkedIn
     ![footer](assets/docs/footer.png)
 
 - ### **Future Features**
@@ -95,65 +107,7 @@ Bird Hunt is a fun and challenging game where you can test your shooting skills.
     Miro was used to create the wireframes during the design process.
 
 # **Testing**
-## **Code Validation**
-- **HTML**
-    - The index.html file was validated by using [HTML validater](https://validator.w3.org/#validate_by_upload)
-    ![html](assets/docs/index_validator.png) and no errors or warnings were found.
-
-    - The game.html file was validated by using [HTML validater](https://validator.w3.org/#validate_by_upload)
-    ![html](assets/docs/game_validator.png) and the errors were about the <img> elements must have an alt attribute on each and after updating, no errors were found
-
-- **CSS**
-    - The style sheet was validated by using [CSS validater](https://jigsaw.w3.org/css-validator/)
-    ![stylesheet](assets/docs/stylesheet_validator.png) and no errors or warnings were found.
-
-- **JavaScript**
-    - The javascript file was validated by using [JS validater](https://jshint.com/)
-    - ![js](assets/docs/js_Validator.png) and no errors or warnings were found.
-    
-
-## **Manual Testing**
-- On clicking the link I expect the user to land on the homepage. He should notice a background image, a centerd title a,two clickable buttons and a footer with two social media icons. It's been tested and working well.
-- On clicking on the instruction button I expect a modal to popup and display the rules on how to play the game. It's been tested and working well.
-- On hovering over the github and linkedin icons in the footer, I expect the icon to get slightly lighter and when clicking the icon, it should take me to the github/linkedin account for the developer. It's been tested and working well.
-- On clicking on the play game button, I expect the user is taken to the game page. It's been tested and working well.
-- On the game page, I expect the user to see birds flying in different directions and two animals poping up randomly on the screen every 1 second. It's been tested and working well.
-- On the game page, I expect the user to see two texts: Score with number 0, Bullets with number 15 and a hourgalss timer icon beneath the texts with number 15. It's been tested and working well.
-- On clicking on a bird, I expect the user to notice that the clicked bird disapeared, the number score rised, the bullets decremented by 1 and the timer is counting down. It's been tested and working well.
-- On keep clicking on the birds, I expect the previous test to happen. It's been tested and working well.
-- On clicking on dragon/hippo/crocodile, I expect the user to notice that the clicked animal disapeared, the number score decremented, the bullets decremented by 1 and the timer is counting down. It's been tested and working well.
-- On clicking on the screen indecating that the user missed shooting the bird, I expect the user to hear a different sound, the score number is the same, the bullets decrements and the timer still counting down. It's been tested and working well.
-- Once the bullets turn into 0, I expect the user to not be able to click any more on any bird left and a pop up message that has a short sentence with the user's score result and a button says paly again. It's been tested and working well.
-- On clicking on the play again button, I expect the user to return to the main page again. It's been tested and working well.
-- On the game page if the hourglass timer went down to 0, I exepect the user to not be able to click any more on any bird left and a pop up message that has a short sentence indecateing that the user has ran out of time and a paly again button. It's been tested and working well.
- 
-
-
-## **Fixed Bugs**
-- I had this bug issue where the game page used to zoon in and out after 4 seconds of the game.
-    ![Game Page](docs/../assets/images/gamePageIssue_Trim.gif.mp4)
-
-    to fix the issue I added the positioning the img element:
-
-        img{
-            postion: fixed;
-        }
-        and now the problem is solved.
-
-- ### **Using Lighthouse**
-    - **Desktop**
-   When ckecking the through lighthouse for desktop devices I got these results for the home page: 
-
-    ![Desktop](docs/../assets/docs/desktop_LH_homePage.png)
-
-    and for the game page:
-    ![Desktop](docs/../assets/docs/desktop_LH_gamePage.png)
-
-    - **Mobile**
-  When ckecking through lighthouse for mobile devices I got these results:
-
-    ![Mobile](******)
-
+For the testing documentations, please chick [TEST.md](/TEST.md)
 
 # **Deployment**
 - ### **Via github pages:**
