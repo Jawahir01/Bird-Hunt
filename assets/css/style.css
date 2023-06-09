@@ -122,23 +122,23 @@ img {
 }
 
 #endGame {
-    height: 220px;
-    width: 300px;
+    height: 230px;
+    width: 350px;
     border-radius: 10px;
     background-color: #eac880;
     box-sizing: border-box;
     position: relative;
-    margin: 10% auto;
+    margin: 8% auto;
 }
 
 #timeEnd {
-    height: 210px;
+    height: 220px;
     width: 300px;
     border-radius: 10px;
     box-sizing: border-box;
     background-color: #eac880;
     position: relative;
-    margin: 10% auto;
+    margin: 8% auto;
 }
 
 #gameOver {
@@ -691,14 +691,13 @@ i:hover {
     font-size: 30vw;
     font-weight: 500;
     font-family: 'Roboto', serif;
-    margin: 12% auto;
     padding: 2px;
 }
 
 .mobiles,
 p {
     padding: 10px;
-    margin: 10px;
+    margin: 10% auto;
     text-align:center;
 }
 
@@ -732,11 +731,12 @@ p {
 
     #endGame {
         height: auto;
+        margin: 13% auto;
     }
 
     #timeEnd {
         height: auto;
-        margin: 15% auto;
+        margin: 13% auto;
     }
 
     .homeTilte {
@@ -773,4 +773,18 @@ p {
         max-width: 70px;
         height: auto;
     }
+
+    .modal-dialog {
+        height: auto;
+    }
+
+    .modal-title{
+        font-size: 20px;
+    } 
+    
+    .modal-body h3, ul {
+
+        font-size: 14px;
+    }
+
 }
