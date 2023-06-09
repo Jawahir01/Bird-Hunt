@@ -91,7 +91,6 @@ Bird Hunt is a fun and challenging game where you can test your shooting skills.
   - Building different rounds for the game and adding diffcultis.
   - Set a score record for the user everythime he plays and show his highest score recorded.
 
-- ### **Responsiveness**
 
 # **Typography and color scheme**
 

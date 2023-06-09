@@ -1,5 +1,5 @@
 let score = 0;
-let bullets = 15;
+let bullets = 13;
 let endGame = document.getElementById("endGame");
 let timeOut = document.getElementById("timeEnd");
 let result = document.getElementById("result");
@@ -58,7 +58,7 @@ let images = [
     { id: "dragon", points: -20 },
     { id: "blueBird_3", points: 50 },
     { id: "turky", points: 500 },
-    { id: "crocodile", points: -10 },
+    { id: "crocodile", points: -50 },
     { id: "hippo", points: -30 },
 ];
 
@@ -116,7 +116,7 @@ function shootBullet(event) {
     }
 }
 
-let timeLeft = 25;
+let timeLeft = 20;
 let elem = document.getElementById('countdown-number');
 let timerId = setInterval(gameTimer, 1000);
 
