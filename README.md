@@ -66,12 +66,12 @@ Bird Hunt is a fun and challenging game where you can test your shooting skills.
    ![Home_Page](assets/docs/main%20page.png)
 
   - **Game Page** It contains ten animated images of birds alongside three different animals (dragon/crocodile/hippo).
-  There are two updated texts of a scores (points) to show the user's recent points and (bullets) to show the user how many bullets left.
-  There is also a timer with hourglass on it to remind the user that he only have _25sec_  to finish the game.
+  There are two updated texts of a scores (points) to show the user's recent points and 13 bullets to start with and then after shooting it shows the user how many bullets are left.
+  There is also a timer with hourglass on it to remind the user that he only have _20sec_  to finish the game.
    ![game-page](/assets/docs/game_page.png)
 
    - **Game instructions**
-  When the player click on Instruction button a pop up box will appear ont he screen to show the player the rules of the game.
+  When the player click on Instruction button, a pop up box will appear on the screen to show the player the rules of the game.
   ![modal box](assets/docs/modal.png)
 
    - **Result Box**
@@ -159,11 +159,12 @@ For the testing documentations, please checck [TEST.md](/TEST.md)
 # **Credits**
 - ## **Content**
     1. The icons in the website were from [Font Awesome](https://fontawesome.com)
-    2. The hourglass code from http://www.w3schools.com
-    3. The footer code is edited using the footer sections from https://www.w3schools.com/bootstrap5/
+    2. The favicons in the website are from [Favicon](https://favicon.io/)
+    3. The hourglass code from (http://www.w3schools.com)
+    4. The footer code is edited using the footer sections from (https://www.w3schools.com/bootstrap5/)
 
 - ## **Media**
-     The images of the theme game background in the Home page, the background image of the game page,  birds and animals were from google image.
+     The images of the theme game background in the Home page, the background image of the game page, the favicon of the website, the birds and animals were from google image.
 
 - ## **Acknowledgements**
      1. _Dave Horrocks_, Technical Content Reviewer in Code Institute.
