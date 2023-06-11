@@ -55,10 +55,10 @@ let images = [
     { id: "flamingo_2", points: 20 },
     { id: "blueBird_2", points: 50 },
     { id: "flamingo_3", points: 20 },
-    { id: "dragon", points: -20 },
+    { id: "dragon", points: -50 },
     { id: "blueBird_3", points: 50 },
     { id: "turky", points: 500 },
-    { id: "crocodile", points: -50 },
+    { id: "crocodile", points: -100 },
     { id: "hippo", points: -30 },
 ];
 

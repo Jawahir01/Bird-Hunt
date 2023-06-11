@@ -48,7 +48,7 @@ Bird Hunt is a fun and challenging game where you can test your shooting skills.
   - I want to easly know how to contact the game developer
 
 - ### **Regular User**
-    As a returning user, I want to play the game and get different scores.
+    As a returning user, I would like to receive different feedback for my scores at the end of the game.
 
 
 # **UX Design**
@@ -62,20 +62,18 @@ Bird Hunt is a fun and challenging game where you can test your shooting skills.
 ## **Features**
 - ### **Existing Features**
     - **Home Page**
-    The main page has a background picture of a dog and ducks . The page title apears clearly as it centers the page. beneath there are two buttons; play game button that directs the end user to the Game page ans Instructions button that modals to how to play the game.
+    The main page of the game has a background image of a dog and flying birds. The page title, "Bird Hunt," is centered at the top of the page. Below the title are two buttons: "Play Game" and "Instructions." The "Play Game" button takes the user to the game page, while the "Instructions" button opens a modal window with instructions on how to play the game.
    ![Home_Page](assets/docs/main%20page.png)
 
-  - **Game Page** It contains ten animated images of birds alongside three different animals (dragon/crocodile/hippo).
-  There are two updated texts of a scores (points) to show the user's recent points and 13 bullets to start with and then after shooting it shows the user how many bullets are left.
-  There is also a timer with hourglass on it to remind the user that he only have _20sec_  to finish the game.
+  - **Game Page** The game contains ten animated images of birds, as well as three different animals: a dragon, a crocodile, and a hippopotamus. The user's score is displayed in a text box current score. The user starts with ten bullets, and the number of bullets remaining is displayed below the score. A timer with an hourglass icon is displayed at the top of the screen, and it counts down from 15 seconds. The game ends when the timer runs out or when the user runs out of bullets.
    ![game-page](/assets/docs/game_page.png)
 
    - **Game instructions**
-  When the player click on Instruction button, a pop up box will appear on the screen to show the player the rules of the game.
+  When the player clicks on Instruction button, a pop up box will appear on the screen to show the player the rules of the game.
   ![modal box](assets/docs/modal.png)
 
    - **Result Box**
-  When the player finishes all the bullets, a small box will pop up on the screen showing the player's final score and a comment regarding his score, underneath there is a button for the player to play the game again.
+  When the player finishes all the bullets, a small box will pop up on the screen showing the player's final score and a feedback regarding his score, underneath there is a button for the player to play the game again.
   ![Result box](assets/docs/resultbox.png)
    -  **End of Time Box**
     If the player ran out of time a small box will pop up on the screen informing that the time has finished. also,there is a button for the player tp play the game again.
@@ -95,7 +93,7 @@ Bird Hunt is a fun and challenging game where you can test your shooting skills.
 # **Typography and color scheme**
 
 ## **Colour Scheme**
- - The color scheme in Duck Hunt is designed to create a sense of nostalgia and fun. The bright, primary colors are reminiscent of classic arcade games, and the overall aesthetic is simple and easy to understand. I used the blue background color with white text on the buttons to match the sky of the background image. I also used **#de7b29** Cherokee Dignity (shades) for the title, scores, results and the timer to help create a sense of excitement and challenge. 
+ - The color scheme in Bird Hunt game is designed to create a sense of nostalgia and fun. The bright, primary colors are reminiscent of classic arcade games, and the overall aesthetic is simple and easy to understand. I used the blue background color with white text on the buttons to match the sky of the background image. I also used **#de7b29** Cherokee Dignity (shades) for the title, scores, results and the timer to help create a sense of excitement and challenge. 
 
 ## **Typography**
 - The typography for the Bird Hunt game is clear and easy to read. I used "Pangolin" font which  is a sans-serif font that is designed for use in games. It is a high-contrast font that is easy to read on a variety of devices.
@@ -160,8 +158,8 @@ For the testing documentations, please checck [TEST.md](/TEST.md)
 - ## **Content**
     1. The icons in the website were from [Font Awesome](https://fontawesome.com)
     2. The favicons in the website are from [Favicon](https://favicon.io/)
-    3. The hourglass code from (http://www.w3schools.com)
-    4. The footer code is edited using the footer sections from (https://www.w3schools.com/bootstrap5/)
+    3. The hourglass code from http://www.w3schools.com
+    4. The footer code is edited using the footer sections from https://www.w3schools.com/bootstrap5/
 
 - ## **Media**
      The images of the theme game background in the Home page, the background image of the game page, the favicon of the website, the birds and animals were from google image.
