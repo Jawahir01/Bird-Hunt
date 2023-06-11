@@ -1,5 +1,5 @@
 let score = 0;
-let bullets = 13;
+let bullets = 10;
 let endGame = document.getElementById("endGame");
 let timeOut = document.getElementById("timeEnd");
 let result = document.getElementById("result");
@@ -42,8 +42,8 @@ function popupAnimals() {
     hippo.style.opacity = 1;
 }
 
-// Set a timer to call the popupAnimals function every 1.5 seconds.
-let randomAppear = setInterval(popupAnimals, 1500);
+// Set a timer to call the popupAnimals function every 1 second.
+let randomAppear = setInterval(popupAnimals, 1000);
 
 // Create an array of the images and their corresponding points
 let images = [
@@ -116,7 +116,7 @@ function shootBullet(event) {
     }
 }
 
-let timeLeft = 20;
+let timeLeft = 15;
 let elem = document.getElementById('countdown-number');
 let timerId = setInterval(gameTimer, 1000);
 
@@ -128,7 +128,7 @@ function gameTimer() {
         clearInterval(hourGlass);
         timeOut.style.display = 'block';
         window.removeEventListener("load", popupAnimals);
-        window.removeEventListener("click", shootBullet);    // raise a question?!!
+        window.removeEventListener("click", shootBullet);
         clearInterval(randomAppear);
     }
 }

@@ -17,12 +17,12 @@
     
 
 ## **Manual Testing**
-- On clicking the link I expect the user to land on the homepage. He should notice a background image, a centerd title a,two clickable buttons and a footer with two social media icons. It's been tested and working well.
+- On clicking the link I expect the user to land on the homepage. He should notice a background image, a centerd title ,two clickable buttons and a footer with two social media icons. It's been tested and working well.
 - On clicking on the instruction button I expect a modal to popup and display the rules on how to play the game. It's been tested and working well.
 - On hovering over the github and linkedin icons in the footer, I expect the icon to get slightly lighter and when clicking the icon, it should take me to the github/linkedin account for the developer. It's been tested and working well.
 - On clicking on the play game button, I expect the user is taken to the game page. It's been tested and working well.
 - On the game page, I expect the user to see birds flying in different directions and two animals poping up randomly on the screen every 1 second. It's been tested and working well.
-- On the game page, I expect the user to see two texts: Score with number 0, Bullets with number 15 and a hourgalss timer icon beneath the texts with number 15. It's been tested and working well.
+- On the game page, I expect the user to see two texts: Score with number 0, Bullets with number 10 and a hourgalss timer icon beneath the texts with number 15. It's been tested and working well.
 - On clicking on a bird, I expect the user to notice that the clicked bird disapeared, the number score rised, the bullets decremented by 1 and the timer is counting down. It's been tested and working well.
 - On keep clicking on the birds, I expect the previous test to happen. It's been tested and working well.
 - On clicking on dragon/hippo/crocodile, I expect the user to notice that the clicked animal disapeared, the number score decremented, the bullets decremented by 1 and the timer is counting down. It's been tested and working well.
