@@ -35,14 +35,12 @@
 
 ## **Fixed Bugs**
 - I had this bug issue where the game page used to zoon in and out after 4 seconds of the game.
-    ![Game Page](docs/../assets/images/gamePageIssue_Trim.gif.mp4)
+    <video src="gamePageIssue.mp4" controls title="bug" mute></video>
 
-    to fix the issue I added the positioning the img element:
+    to fix the issue I added the position to the img element:
 
-        img{
-            postion: fixed;
-        }
-        and now the problem is solved.
+        img {postion: fixed;}
+    and now the problem is solved.
 
 - ### **Using Lighthouse**
     - **Desktop**

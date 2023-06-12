@@ -124,6 +124,8 @@ Bird Hunt is a fun and challenging game where you can test your shooting skills.
 
     - **Miro:**
     Miro was used to create the wireframes during the design process.
+    - **Favicon:**
+    [favicon generator](https://favicon.io/) was used to convert the image to the favicon format.
 
 # **Testing**
 For the testing documentations, please checck [TEST.md](/TEST.md)
