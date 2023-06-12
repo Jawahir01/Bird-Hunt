@@ -158,10 +158,11 @@ For the testing documentations, please checck [TEST.md](/TEST.md)
 
 # **Credits**
 - ## **Content**
-    1. The icons in the website were from [Font Awesome](https://fontawesome.com)
-    2. The favicons in the website are from [Favicon](https://favicon.io/)
-    3. The hourglass code from http://www.w3schools.com
-    4. The footer code is edited using the footer sections from https://www.w3schools.com/bootstrap5/
+    1. I received help with my game idea from lessons on Code Institute and YouTube.
+    2. The icons in the website were from [Font Awesome](https://fontawesome.com)
+    3. The favicons in the website are from [Favicon](https://favicon.io/)
+    4. The hourglass code from http://www.w3schools.com
+    5. The footer code is edited using the footer sections from https://www.w3schools.com/bootstrap5/
 
 - ## **Media**
      The images of the theme game background in the Home page, the background image of the game page, the favicon of the website, the birds and animals were from google image.
