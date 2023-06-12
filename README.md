@@ -158,7 +158,7 @@ For the testing documentations, please checck [TEST.md](/TEST.md)
 
 # **Credits**
 - ## **Content**
-    1. I received help with my game idea from lessons on Code Institute and YouTube.
+    1. I received help with my game idea from lessons on Code Institute and YouTube channels: _Minz Code_, _Chris Courses_, _David Reid_, _SagarMore_ and _Coding with Adam_ .
     2. The icons in the website were from [Font Awesome](https://fontawesome.com)
     3. The favicons in the website are from [Favicon](https://favicon.io/)
     4. The hourglass code from http://www.w3schools.com
